@@ -1,0 +1,11 @@
+ward_id,precinct_id,tract_name,income_category,candidate_count,avg_eligibility_score,avg_age
+21,7,Census Tract 7.03; Suffolk County; Massachusetts,Low Income,24,40.0,78.33
+22,1,Census Tract 101.03; Suffolk County; Massachusetts,Low Income,8,45.0,74.0
+22,5,Census Tract 6.03; Suffolk County; Massachusetts,Low Income,8,44.38,74.88
+22,2,Census Tract 101.03; Suffolk County; Massachusetts,Low Income,6,45.83,75.67
+21,9,Census Tract 7.03; Suffolk County; Massachusetts,Low Income,5,42.0,76.0
+21,6,Census Tract 7.03; Suffolk County; Massachusetts,Low Income,4,46.25,72.75
+22,12,Census Tract 6.03; Suffolk County; Massachusetts,Low Income,2,45.0,79.5
+21,4,Census Tract 8.05; Suffolk County; Massachusetts,Moderate Income,1,45.0,70.0
+22,8,Census Tract 5.06; Suffolk County; Massachusetts,Moderate Income,1,40.0,75.0
+22,9,Census Tract 5.06; Suffolk County; Massachusetts,Moderate Income,1,40.0,75.0

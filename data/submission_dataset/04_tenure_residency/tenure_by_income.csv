@@ -1,0 +1,4 @@
+income_category,Homeowner,Renter,Unknown,total,homeowner_pct,renter_pct
+Higher Income ($75k+),1415,1916,666,3997,35.4,47.9
+Low Income (<$50k),324,341,251,916,35.4,37.2
+Moderate Income ($50k-$75k),159,235,81,475,33.5,49.5
