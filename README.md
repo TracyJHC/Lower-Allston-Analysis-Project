@@ -1,7 +1,7 @@
 
 ## Team A Repository Overview (fa25-team-a)
 
-This folder contains Team A's working code, data, notebooks, and documentation for the Allston Brighton CDC project on the `fa25-team-a-dev` branch. Below is the structure and how to use each section.
+This folder contains a Data Science class Project working code, data, notebooks, and documentation for the Allston Brighton CDC project on the `fa25-team-a-dev` branch. Below is the structure and how to use each section.
 
 ### Directory Structure
 ```bash
