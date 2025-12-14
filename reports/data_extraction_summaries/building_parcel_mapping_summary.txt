@@ -1,0 +1,9 @@
+Official Building-Parcel Mapping Summary
+==================================================
+
+total_buildings: 10,282
+buildings_with_official_parcels: 8,093
+buildings_without_official_parcels: 2,189
+unique_parcels_linked: 6,952
+matching_parcels: 6,806
+missing_parcels: 146

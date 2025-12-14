@@ -1,0 +1,23 @@
+tract_id,tract_name,state_code,county_code,tract_code,median_income,area_sq_km
+25025000101,Census Tract 1.01; Suffolk County; Massachusetts,25,025,000101,151466.0,0.14
+25025000301,Census Tract 3.01; Suffolk County; Massachusetts,25,025,000301,131206.0,0.24
+25025000302,Census Tract 3.02; Suffolk County; Massachusetts,25,025,000302,116793.0,0.18
+25025000201,Census Tract 2.01; Suffolk County; Massachusetts,25,025,000201,114271.0,1.18
+25025000402,Census Tract 4.02; Suffolk County; Massachusetts,25,025,000402,111705.0,0.6
+25025000601,Census Tract 6.01; Suffolk County; Massachusetts,25,025,000601,97877.0,1.42
+25025000701,Census Tract 7.01; Suffolk County; Massachusetts,25,025,000701,93326.0,0.19
+25025000503,Census Tract 5.03; Suffolk County; Massachusetts,25,025,000503,92560.0,0.64
+25025000806,Census Tract 8.06; Suffolk County; Massachusetts,25,025,000806,89479.0,0.25
+25025000202,Census Tract 2.02; Suffolk County; Massachusetts,25,025,000202,88625.0,0.5
+25025000502,Census Tract 5.02; Suffolk County; Massachusetts,25,025,000502,82125.0,0.57
+25025000804,Census Tract 8.04; Suffolk County; Massachusetts,25,025,000804,81853.0,0.31
+25025000505,Census Tract 5.05; Suffolk County; Massachusetts,25,025,000505,80556.0,0.43
+25025000102,Census Tract 1.02; Suffolk County; Massachusetts,25,025,000102,79000.0,0.23
+25025000704,Census Tract 7.04; Suffolk County; Massachusetts,25,025,000704,78778.0,0.22
+25025000401,Census Tract 4.01; Suffolk County; Massachusetts,25,025,000401,75366.0,0.6
+25025000506,Census Tract 5.06; Suffolk County; Massachusetts,25,025,000506,73403.0,0.81
+25025000604,Census Tract 6.04; Suffolk County; Massachusetts,25,025,000604,60060.0,0.14
+25025000805,Census Tract 8.05; Suffolk County; Massachusetts,25,025,000805,53824.0,0.37
+25025000703,Census Tract 7.03; Suffolk County; Massachusetts,25,025,000703,46985.0,0.29
+25025010103,Census Tract 101.03; Suffolk County; Massachusetts,25,025,010103,45000.0,0.61
+25025000603,Census Tract 6.03; Suffolk County; Massachusetts,25,025,000603,33229.0,1.07

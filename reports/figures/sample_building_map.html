@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c22f244081f1bda0ac0b6fcb66004c58 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c22f244081f1bda0ac0b6fcb66004c58" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c22f244081f1bda0ac0b6fcb66004c58 = L.map(
+                "map_c22f244081f1bda0ac0b6fcb66004c58",
+                {
+                    center: [42.347863336986855, -71.15244116009933],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6d160a28afc08cdd76cad85ee68e2b21 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6d160a28afc08cdd76cad85ee68e2b21.addTo(map_c22f244081f1bda0ac0b6fcb66004c58);
+        
+    
+            var marker_c0cb596ad25f540d16121e7a3c55fc2e = L.marker(
+                [42.340780154279045, -71.15593458788281],
+                {
+}
+            ).addTo(map_c22f244081f1bda0ac0b6fcb66004c58);
+        
+    
+            var icon_f841f8846d605c33d51d235268ce16e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31ec17b2dbae21f0ced392e688981b54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1aa6ad6effff90a403f0ee477179c95 = $(`<div id="html_f1aa6ad6effff90a403f0ee477179c95" style="width: 100.0%; height: 100.0%;">         &lt;div style=&#34;width: 200px;&#34;&gt;             &lt;h4&gt;Building 228352_898978&lt;/h4&gt;             &lt;p&gt;&lt;strong&gt;Parcel:&lt;/strong&gt; 2204999000&lt;/p&gt;             &lt;p&gt;&lt;strong&gt;Area:&lt;/strong&gt; N/A sq ft&lt;/p&gt;             &lt;br&gt;             &lt;a href=&#34;https://www.boston.gov/property/2204999000&#34; target=&#34;_blank&#34; style=&#34;background-color: #007bff; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; display: inline-block; font-size: 12px;&#34;&gt;                 View on Boston.gov             &lt;/a&gt;         &lt;/div&gt;         </div>`)[0];
+                popup_31ec17b2dbae21f0ced392e688981b54.setContent(html_f1aa6ad6effff90a403f0ee477179c95);
+            
+        
+
+        marker_c0cb596ad25f540d16121e7a3c55fc2e.bindPopup(popup_31ec17b2dbae21f0ced392e688981b54)
+        ;
+
+        
+    
+    
+            marker_c0cb596ad25f540d16121e7a3c55fc2e.bindTooltip(
+                `<div>
+                     Building 228352_898978
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c0cb596ad25f540d16121e7a3c55fc2e.setIcon(icon_f841f8846d605c33d51d235268ce16e6);
+            
+    
+            var marker_5caee0501e77b67630ce4c6bb9c7d460 = L.marker(
+                [42.3421994540932, -71.15824452019964],
+                {
+}
+            ).addTo(map_c22f244081f1bda0ac0b6fcb66004c58);
+        
+    
+            var icon_7d688b28c5d4275db8d3c5ed4cc3c4c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b0f6df0510d663627e9d1390339df4ad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0b7dd5241739b7c8b889154fe070fd3 = $(`<div id="html_f0b7dd5241739b7c8b889154fe070fd3" style="width: 100.0%; height: 100.0%;">         &lt;div style=&#34;width: 200px;&#34;&gt;             &lt;h4&gt;Building 228162_899135&lt;/h4&gt;             &lt;p&gt;&lt;strong&gt;Parcel:&lt;/strong&gt; 2205022000&lt;/p&gt;             &lt;p&gt;&lt;strong&gt;Area:&lt;/strong&gt; N/A sq ft&lt;/p&gt;             &lt;br&gt;             &lt;a href=&#34;https://www.boston.gov/property/2205022000&#34; target=&#34;_blank&#34; style=&#34;background-color: #007bff; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; display: inline-block; font-size: 12px;&#34;&gt;                 View on Boston.gov             &lt;/a&gt;         &lt;/div&gt;         </div>`)[0];
+                popup_b0f6df0510d663627e9d1390339df4ad.setContent(html_f0b7dd5241739b7c8b889154fe070fd3);
+            
+        
+
+        marker_5caee0501e77b67630ce4c6bb9c7d460.bindPopup(popup_b0f6df0510d663627e9d1390339df4ad)
+        ;
+
+        
+    
+    
+            marker_5caee0501e77b67630ce4c6bb9c7d460.bindTooltip(
+                `<div>
+                     Building 228162_899135
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5caee0501e77b67630ce4c6bb9c7d460.setIcon(icon_7d688b28c5d4275db8d3c5ed4cc3c4c6);
+            
+    
+            var marker_f49a077cd28231e0a87b6e3d1bf8e75c = L.marker(
+                [42.34402411685934, -71.1513517265747],
+                {
+}
+            ).addTo(map_c22f244081f1bda0ac0b6fcb66004c58);
+        
+    
+            var icon_b751786de926614307e74ef122dd43c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68eca05e76d5c9a915d6ffe1f52b6dce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3cfd4f25ada086d2ce3a1af300147a0c = $(`<div id="html_3cfd4f25ada086d2ce3a1af300147a0c" style="width: 100.0%; height: 100.0%;">         &lt;div style=&#34;width: 200px;&#34;&gt;             &lt;h4&gt;Building 228729_899340&lt;/h4&gt;             &lt;p&gt;&lt;strong&gt;Parcel:&lt;/strong&gt; 2102767000&lt;/p&gt;             &lt;p&gt;&lt;strong&gt;Area:&lt;/strong&gt; N/A sq ft&lt;/p&gt;             &lt;br&gt;             &lt;a href=&#34;https://www.boston.gov/property/2102767000&#34; target=&#34;_blank&#34; style=&#34;background-color: #007bff; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; display: inline-block; font-size: 12px;&#34;&gt;                 View on Boston.gov             &lt;/a&gt;         &lt;/div&gt;         </div>`)[0];
+                popup_68eca05e76d5c9a915d6ffe1f52b6dce.setContent(html_3cfd4f25ada086d2ce3a1af300147a0c);
+            
+        
+
+        marker_f49a077cd28231e0a87b6e3d1bf8e75c.bindPopup(popup_68eca05e76d5c9a915d6ffe1f52b6dce)
+        ;
+
+        
+    
+    
+            marker_f49a077cd28231e0a87b6e3d1bf8e75c.bindTooltip(
+                `<div>
+                     Building 228729_899340
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f49a077cd28231e0a87b6e3d1bf8e75c.setIcon(icon_b751786de926614307e74ef122dd43c2);
+            
+    
+            var marker_16f443f47311ca17ebffbdc155243827 = L.marker(
+                [42.34421249126872, -71.15535650343686],
+                {
+}
+            ).addTo(map_c22f244081f1bda0ac0b6fcb66004c58);
+        
+    
+            var icon_fb1e8083fe154acd6c1187f98d4d457a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8be7c91668720e45c65e67230fdb061f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d8a75a184015c118824aa03d4bd75e2 = $(`<div id="html_9d8a75a184015c118824aa03d4bd75e2" style="width: 100.0%; height: 100.0%;">         &lt;div style=&#34;width: 200px;&#34;&gt;             &lt;h4&gt;Building 228399_899359&lt;/h4&gt;             &lt;p&gt;&lt;strong&gt;Parcel:&lt;/strong&gt; 2204953000&lt;/p&gt;             &lt;p&gt;&lt;strong&gt;Area:&lt;/strong&gt; N/A sq ft&lt;/p&gt;             &lt;br&gt;             &lt;a href=&#34;https://www.boston.gov/property/2204953000&#34; target=&#34;_blank&#34; style=&#34;background-color: #007bff; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; display: inline-block; font-size: 12px;&#34;&gt;                 View on Boston.gov             &lt;/a&gt;         &lt;/div&gt;         </div>`)[0];
+                popup_8be7c91668720e45c65e67230fdb061f.setContent(html_9d8a75a184015c118824aa03d4bd75e2);
+            
+        
+
+        marker_16f443f47311ca17ebffbdc155243827.bindPopup(popup_8be7c91668720e45c65e67230fdb061f)
+        ;
+
+        
+    
+    
+            marker_16f443f47311ca17ebffbdc155243827.bindTooltip(
+                `<div>
+                     Building 228399_899359
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_16f443f47311ca17ebffbdc155243827.setIcon(icon_fb1e8083fe154acd6c1187f98d4d457a);
+            
+    
+            var marker_ce09f3b8077acdbc8516664059ea2aba = L.marker(
+                [42.34136529455968, -71.15591350616096],
+                {
+}
+            ).addTo(map_c22f244081f1bda0ac0b6fcb66004c58);
+        
+    
+            var icon_e2541dad376eae14c6a0dc4c728435f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_10668830619ca834812f2751b2d74609 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14bfac036ed4712b7d13f6f4df1757c9 = $(`<div id="html_14bfac036ed4712b7d13f6f4df1757c9" style="width: 100.0%; height: 100.0%;">         &lt;div style=&#34;width: 200px;&#34;&gt;             &lt;h4&gt;Building 228354_899043&lt;/h4&gt;             &lt;p&gt;&lt;strong&gt;Parcel:&lt;/strong&gt; 2204989000&lt;/p&gt;             &lt;p&gt;&lt;strong&gt;Area:&lt;/strong&gt; N/A sq ft&lt;/p&gt;             &lt;br&gt;             &lt;a href=&#34;https://www.boston.gov/property/2204989000&#34; target=&#34;_blank&#34; style=&#34;background-color: #007bff; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; display: inline-block; font-size: 12px;&#34;&gt;                 View on Boston.gov             &lt;/a&gt;         &lt;/div&gt;         </div>`)[0];
+                popup_10668830619ca834812f2751b2d74609.setContent(html_14bfac036ed4712b7d13f6f4df1757c9);
+            
+        
+
+        marker_ce09f3b8077acdbc8516664059ea2aba.bindPopup(popup_10668830619ca834812f2751b2d74609)
+        ;
+
+        
+    
+    
+            marker_ce09f3b8077acdbc8516664059ea2aba.bindTooltip(
+                `<div>
+                     Building 228354_899043
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ce09f3b8077acdbc8516664059ea2aba.setIcon(icon_e2541dad376eae14c6a0dc4c728435f9);
+            
+    
+            var marker_da9f2945c0155e9d38763a78b9547609 = L.marker(
+                [42.353628066728426, -71.1501269368079],
+                {
+}
+            ).addTo(map_c22f244081f1bda0ac0b6fcb66004c58);
+        
+    
+            var icon_197c9ece40b0ecd75a8b998a64a40922 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4da2c75337b65e5feb06221e37c4e073 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df13b99996fa39cc6a8243e4a8497c77 = $(`<div id="html_df13b99996fa39cc6a8243e4a8497c77" style="width: 100.0%; height: 100.0%;">         &lt;div style=&#34;width: 200px;&#34;&gt;             &lt;h4&gt;Building 228825_900407&lt;/h4&gt;             &lt;p&gt;&lt;strong&gt;Parcel:&lt;/strong&gt; 2202216000&lt;/p&gt;             &lt;p&gt;&lt;strong&gt;Area:&lt;/strong&gt; N/A sq ft&lt;/p&gt;             &lt;br&gt;             &lt;a href=&#34;https://www.boston.gov/property/2202216000&#34; target=&#34;_blank&#34; style=&#34;background-color: #007bff; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; display: inline-block; font-size: 12px;&#34;&gt;                 View on Boston.gov             &lt;/a&gt;         &lt;/div&gt;         </div>`)[0];
+                popup_4da2c75337b65e5feb06221e37c4e073.setContent(html_df13b99996fa39cc6a8243e4a8497c77);
+            
+        
+
+        marker_da9f2945c0155e9d38763a78b9547609.bindPopup(popup_4da2c75337b65e5feb06221e37c4e073)
+        ;
+
+        
+    
+    
+            marker_da9f2945c0155e9d38763a78b9547609.bindTooltip(
+                `<div>
+                     Building 228825_900407
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_da9f2945c0155e9d38763a78b9547609.setIcon(icon_197c9ece40b0ecd75a8b998a64a40922);
+            
+    
+            var marker_36eb4bbd3bdc53d731f00a91f2bf859c = L.marker(
+                [42.35358739909603, -71.14997042867697],
+                {
+}
+            ).addTo(map_c22f244081f1bda0ac0b6fcb66004c58);
+        
+    
+            var icon_90441660ab882517952867aaf234fb21 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55bdf307b567222617152f57f20ba320 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ce18986a477372382a534eee822b8d3 = $(`<div id="html_8ce18986a477372382a534eee822b8d3" style="width: 100.0%; height: 100.0%;">         &lt;div style=&#34;width: 200px;&#34;&gt;             &lt;h4&gt;Building 228838_900402&lt;/h4&gt;             &lt;p&gt;&lt;strong&gt;Parcel:&lt;/strong&gt; 2202217000&lt;/p&gt;             &lt;p&gt;&lt;strong&gt;Area:&lt;/strong&gt; N/A sq ft&lt;/p&gt;             &lt;br&gt;             &lt;a href=&#34;https://www.boston.gov/property/2202217000&#34; target=&#34;_blank&#34; style=&#34;background-color: #007bff; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; display: inline-block; font-size: 12px;&#34;&gt;                 View on Boston.gov             &lt;/a&gt;         &lt;/div&gt;         </div>`)[0];
+                popup_55bdf307b567222617152f57f20ba320.setContent(html_8ce18986a477372382a534eee822b8d3);
+            
+        
+
+        marker_36eb4bbd3bdc53d731f00a91f2bf859c.bindPopup(popup_55bdf307b567222617152f57f20ba320)
+        ;
+
+        
+    
+    
+            marker_36eb4bbd3bdc53d731f00a91f2bf859c.bindTooltip(
+                `<div>
+                     Building 228838_900402
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_36eb4bbd3bdc53d731f00a91f2bf859c.setIcon(icon_90441660ab882517952867aaf234fb21);
+            
+    
+            var marker_f80d1ac665ff0a157ab8c5e4ed3cc866 = L.marker(
+                [42.353609825224794, -71.15040080307594],
+                {
+}
+            ).addTo(map_c22f244081f1bda0ac0b6fcb66004c58);
+        
+    
+            var icon_6489696c8a150bd9fb4fa23dbfb8763f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47550f99f83400a51c31169aa077022a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2bdc4de75bf3a7c0a1e191fc0be0f366 = $(`<div id="html_2bdc4de75bf3a7c0a1e191fc0be0f366" style="width: 100.0%; height: 100.0%;">         &lt;div style=&#34;width: 200px;&#34;&gt;             &lt;h4&gt;Building 228803_900405&lt;/h4&gt;             &lt;p&gt;&lt;strong&gt;Parcel:&lt;/strong&gt; 2202232000&lt;/p&gt;             &lt;p&gt;&lt;strong&gt;Area:&lt;/strong&gt; N/A sq ft&lt;/p&gt;             &lt;br&gt;             &lt;a href=&#34;https://www.boston.gov/property/2202232000&#34; target=&#34;_blank&#34; style=&#34;background-color: #007bff; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; display: inline-block; font-size: 12px;&#34;&gt;                 View on Boston.gov             &lt;/a&gt;         &lt;/div&gt;         </div>`)[0];
+                popup_47550f99f83400a51c31169aa077022a.setContent(html_2bdc4de75bf3a7c0a1e191fc0be0f366);
+            
+        
+
+        marker_f80d1ac665ff0a157ab8c5e4ed3cc866.bindPopup(popup_47550f99f83400a51c31169aa077022a)
+        ;
+
+        
+    
+    
+            marker_f80d1ac665ff0a157ab8c5e4ed3cc866.bindTooltip(
+                `<div>
+                     Building 228803_900405
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f80d1ac665ff0a157ab8c5e4ed3cc866.setIcon(icon_6489696c8a150bd9fb4fa23dbfb8763f);
+            
+    
+            var marker_4bc8a90245d30719142de39613ba8788 = L.marker(
+                [42.35264352376254, -71.14876443826948],
+                {
+}
+            ).addTo(map_c22f244081f1bda0ac0b6fcb66004c58);
+        
+    
+            var icon_f936766e9ee0d79570298e4ec94ea02b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b13d7bc00a407e3e17ed6cae0eb7fab6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_989af4e4b3bc6c10e186251e05dfa0bc = $(`<div id="html_989af4e4b3bc6c10e186251e05dfa0bc" style="width: 100.0%; height: 100.0%;">         &lt;div style=&#34;width: 200px;&#34;&gt;             &lt;h4&gt;Building 228938_900298&lt;/h4&gt;             &lt;p&gt;&lt;strong&gt;Parcel:&lt;/strong&gt; 2202245000&lt;/p&gt;             &lt;p&gt;&lt;strong&gt;Area:&lt;/strong&gt; N/A sq ft&lt;/p&gt;             &lt;br&gt;             &lt;a href=&#34;https://www.boston.gov/property/2202245000&#34; target=&#34;_blank&#34; style=&#34;background-color: #007bff; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; display: inline-block; font-size: 12px;&#34;&gt;                 View on Boston.gov             &lt;/a&gt;         &lt;/div&gt;         </div>`)[0];
+                popup_b13d7bc00a407e3e17ed6cae0eb7fab6.setContent(html_989af4e4b3bc6c10e186251e05dfa0bc);
+            
+        
+
+        marker_4bc8a90245d30719142de39613ba8788.bindPopup(popup_b13d7bc00a407e3e17ed6cae0eb7fab6)
+        ;
+
+        
+    
+    
+            marker_4bc8a90245d30719142de39613ba8788.bindTooltip(
+                `<div>
+                     Building 228938_900298
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4bc8a90245d30719142de39613ba8788.setIcon(icon_f936766e9ee0d79570298e4ec94ea02b);
+            
+    
+            var marker_11e712b89e036948e9b1a389e31fac70 = L.marker(
+                [42.352583043996766, -71.14834814990799],
+                {
+}
+            ).addTo(map_c22f244081f1bda0ac0b6fcb66004c58);
+        
+    
+            var icon_492c19e788d6d08d1744996fd932ed05 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1809f5654bc63ebbba5f9bb41810ae70 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69f3594791fbb4d0011edcf982baa470 = $(`<div id="html_69f3594791fbb4d0011edcf982baa470" style="width: 100.0%; height: 100.0%;">         &lt;div style=&#34;width: 200px;&#34;&gt;             &lt;h4&gt;Building 228972_900291&lt;/h4&gt;             &lt;p&gt;&lt;strong&gt;Parcel:&lt;/strong&gt; 2202247000&lt;/p&gt;             &lt;p&gt;&lt;strong&gt;Area:&lt;/strong&gt; N/A sq ft&lt;/p&gt;             &lt;br&gt;             &lt;a href=&#34;https://www.boston.gov/property/2202247000&#34; target=&#34;_blank&#34; style=&#34;background-color: #007bff; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; display: inline-block; font-size: 12px;&#34;&gt;                 View on Boston.gov             &lt;/a&gt;         &lt;/div&gt;         </div>`)[0];
+                popup_1809f5654bc63ebbba5f9bb41810ae70.setContent(html_69f3594791fbb4d0011edcf982baa470);
+            
+        
+
+        marker_11e712b89e036948e9b1a389e31fac70.bindPopup(popup_1809f5654bc63ebbba5f9bb41810ae70)
+        ;
+
+        
+    
+    
+            marker_11e712b89e036948e9b1a389e31fac70.bindTooltip(
+                `<div>
+                     Building 228972_900291
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_11e712b89e036948e9b1a389e31fac70.setIcon(icon_492c19e788d6d08d1744996fd932ed05);
+            
+</script>
+</html>

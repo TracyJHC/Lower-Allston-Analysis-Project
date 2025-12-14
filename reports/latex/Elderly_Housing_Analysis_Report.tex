@@ -1,0 +1,889 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage{textcomp}
+
+% Page setup
+\geometry{margin=1in}
+\onehalfspacing
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Elderly Housing Analysis: Allston-Brighton}
+\fancyhead[R]{\small \thepage}
+\fancyfoot[C]{}
+
+% Title formatting
+\titleformat{\section}
+{\Large\bfseries}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}
+{\large\bfseries}
+{}
+{0em}
+{}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Elderly Housing Analysis: Allston-Brighton},
+    pdfauthor={Allston-Brighton Community Development Corporation}
+}
+
+% Title information
+\title{Elderly Housing Analysis: Allston-Brighton\\
+\large Assessment of Housing Needs and Market Impact}
+\author{Allston-Brighton Community Development Corporation\\
+Team A (fa25-team-a)}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This report presents an analysis of elderly residents (age 62+) in Allston-Brighton, Massachusetts, examining their demographic characteristics, geographic distribution, housing needs, and the potential market impact of transitioning eligible residents to new affordable senior housing. Using voter registration data, property assessments, and housing conditions, we identified 7,396 elderly residents (16.9\% of the total voter population) and assessed their eligibility for affordable senior housing opportunities. The analysis shows that 1,090 residents (15.7\%) qualify as Medium to Very High priority candidates, with 169 residents (2.4\%) in High or Very High priority indicating the most urgent need. The report also evaluates the housing market implications of a proposed 50-60 unit senior housing project, estimating that properties valued at \$32.3-\$49.0 million could become available if 20-30\% of homeowner candidates accept housing offers. This work provides insights for housing policy, resource allocation, and community development planning in Allston-Brighton.
+\end{abstract}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+Allston-Brighton, a vibrant neighborhood in Boston, Massachusetts, faces significant challenges in meeting the housing needs of its aging population. With 7,396 elderly residents (age 62+) representing 16.9\% of the total voter population, understanding their demographic characteristics, geographic distribution, and housing needs is essential for effective community development and housing policy.
+
+This report addresses three critical questions:
+
+\begin{enumerate}
+    \item \textbf{Who are the elderly residents and where do they live?} Understanding the demographic profile and geographic distribution of elderly residents is fundamental to identifying areas of need and planning targeted interventions.
+    
+    \item \textbf{What supports are needed to connect them with housing resources?} Identifying barriers to housing access and eligibility for affordable senior housing opportunities supports targeted resource allocation and support services.
+    
+    \item \textbf{How could shifting elderly residents to new units affect broader neighborhood housing dynamics?} Assessing the market impact of housing transitions is crucial for understanding neighborhood-level effects and planning sustainable community development.
+\end{enumerate}
+
+Using voter registration records, property assessments, housing conditions, and geographic information, this report provides evidence-based insights to guide housing policy and community development initiatives in Allston-Brighton.
+
+\section{Methodology}
+
+\subsection{Data Sources}
+
+This analysis integrates multiple data sources:
+
+\begin{itemize}
+    \item \textbf{Voter Registration Data (2020)}: 43,759 registered voters in Wards 21 and 22, including age, address, and geographic identifiers
+    \item \textbf{Property Assessment Data (2025)}: Building characteristics, property values, housing conditions, and ownership information
+    \item \textbf{Census Tract Data}: Median income, demographic characteristics, and geographic boundaries
+    \item \textbf{Property Violations}: Open and closed violations indicating housing quality issues
+    \item \textbf{Amenity Data}: Locations of stores, parks, and open spaces for accessibility analysis
+\end{itemize}
+
+\subsection{Analysis Population}
+
+The analysis focuses on elderly residents defined as age 62 and older, consistent with standard definitions for senior housing eligibility. After excluding residents already in income-restricted or senior housing projects (458 residents, 6.2\% of total), the final analysis population consists of 6,958 elderly residents.
+
+\subsection{Geographic Matching}
+
+Residents were matched to buildings using address-based spatial matching between voter data and property assessment records. This matching allows analysis of housing conditions, property values, and tenure status. However, it is important to note that building matching is spatial (address matching), not temporal (residency verification).
+
+\subsection{Eligibility Scoring System}
+
+An eligibility scoring system (0-100 points) was developed based on multiple need factors. Note: Results in this report reflect the scoring system as of the analysis date. The scoring system prioritizes residents with limited amenity access and removes points for long-term residency, as these residents are less likely to need housing assistance.
+
+\begin{itemize}
+    \item \textbf{Need Factors (55 points maximum)}:
+    \begin{itemize}
+        \item Low income (<\$50k census tract): +25 points
+        \item Moderate income (\$50k-\$75k): +15 points
+        \item Poor housing conditions: +20 points
+        \item Fair housing conditions: +10 points
+        \item Open violations: +15 points
+    \end{itemize}
+    \item \textbf{Amenity Access (10 points maximum)}:
+    \begin{itemize}
+        \item Store proximity: Limited (>1000m) = +5 points, No data = +2 points, Good (500-1000m) = +3 points, Excellent ($\leq$500m) = 0 points
+        \item Park proximity: Limited (>600m) = +5 points, No data = +2 points, Good (300-600m) = +3 points, Excellent ($\leq$300m) = 0 points
+    \end{itemize}
+\end{itemize}
+
+Note: Higher points are assigned to residents with limited amenity access, as they have greater need for housing support. Excellent access receives no points since these residents are already well-served.
+
+Priority levels were assigned based on total scores:
+\begin{itemize}
+    \item Very High (36-100 points): 5 residents (0.1\%)
+    \item High (26-35 points): 164 residents (2.4\%)
+    \item Medium (11-25 points): 921 residents (13.2\%)
+    \item Low (0-10 points): 5,868 residents (84.3\%)
+\end{itemize}
+
+\section{Who Are the Elderly Residents and Where Do They Live?}
+
+\subsection{Demographic Profile}
+
+Allston-Brighton is home to 7,396 elderly residents (age 62+), representing 16.9\% of the total voter population of 43,759. The elderly population exhibits the following characteristics. Figure~\ref{fig:elderly_dist} shows the age distribution and voter distribution of elderly residents.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{../figures/elderly_dist_voterlist.png}
+\caption{Age Distribution and Voter Distribution of Elderly Residents}
+\label{fig:elderly_dist}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Elderly Population Demographics}
+\label{tab:demographics}
+\begin{tabular}{lr}
+\toprule
+\textbf{Characteristic} & \textbf{Value} \\
+\midrule
+Total Elderly Residents (62+) & 7,396 \\
+Percentage of Total Voters & 16.9\% \\
+Average Age & 74.9 years \\
+Median Age & 74.0 years \\
+Age Range & 62-105+ years \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Geographic Distribution}
+
+Elderly residents are not uniformly distributed across Allston-Brighton. Significant geographic clustering occurs at multiple scales. Ward 21 (Allston) has a higher concentration of elderly residents.
+
+\subsubsection{Ward-Level Distribution}
+
+Allston-Brighton consists of two wards: Ward 21 (Allston) and Ward 22 (Brighton). Ward 21 has a higher concentration and older average age of elderly residents:
+
+\begin{table}[H]
+\centering
+\caption{Elderly Population by Ward}
+\label{tab:ward_distribution}
+\begin{tabular}{lrrrrr}
+\toprule
+\textbf{Ward} & \textbf{Ward Name} & \textbf{Elderly Count} & \textbf{Total Voters} & \textbf{Elderly \%} & \textbf{Avg Age} \\
+\midrule
+21 & Allston & 4,199 & 23,781 & 17.7\% & 76.2 \\
+22 & Brighton & 3,197 & 19,978 & 16.0\% & 73.1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Precinct-Level Concentration}
+
+Elderly residents are highly concentrated in specific precincts, with Precinct 21-13 having the highest concentration at 39.7\% of the precinct population.
+
+\begin{table}[H]
+\centering
+\caption{Top 10 Precincts by Elderly Concentration}
+\label{tab:precinct_distribution}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Ward-Precinct} & \textbf{Precinct Name} & \textbf{Elderly Count} & \textbf{Elderly \%} & \textbf{Avg Age} \\
+\midrule
+21-13 & Precinct 13 & 841 & 39.7\% & 79.5 \\
+21-16 & Precinct 16 & 540 & 33.2\% & 77.7 \\
+21-12 & Precinct 12 & 499 & 32.0\% & 78.2 \\
+22-2 & Precinct 2 & 423 & 17.2\% & 73.3 \\
+21-10 & Precinct 10 & 413 & 26.3\% & 75.9 \\
+21-9 & Precinct 9 & 352 & 14.6\% & 73.9 \\
+21-11 & Precinct 11 & 333 & 15.2\% & 74.1 \\
+22-1 & Precinct 1 & 323 & 13.1\% & 72.8 \\
+21-8 & Precinct 8 & 310 & 12.9\% & 73.5 \\
+22-5 & Precinct 5 & 308 & 12.5\% & 73.2 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Street-Level Concentration}
+
+At the street level, Wallingford Road exhibits the highest concentration of elderly residents, with 77.7\% of street residents being elderly.
+
+\begin{table}[H]
+\centering
+\caption{Top 10 Streets by Elderly Count}
+\label{tab:street_distribution}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Street Name} & \textbf{Elderly Count} & \textbf{Elderly \%} & \textbf{Avg Age} \\
+\midrule
+Commonwealth Ave & 650 & 13.8\% & 73.9 \\
+Wallingford Rd & 548 & 77.7\% & 83.0 \\
+Washington St & 513 & 41.2\% & 78.7 \\
+Chestnut Hill Ave & 279 & 44.6\% & 77.0 \\
+Fidelis Way & 134 & 41.2\% & 74.9 \\
+Brighton Ave & 128 & 8.3\% & 72.5 \\
+Harvard Ave & 125 & 7.2\% & 72.8 \\
+Corey Rd & 122 & 45.9\% & 77.2 \\
+Beacon St & 118 & 6.8\% & 73.1 \\
+Gardner St & 115 & 12.5\% & 73.4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Census Tract Analysis}
+
+Elderly residents are distributed across 21 census tracts, with significant variation in both population density and median income. Figure~\ref{fig:census_tract_map} shows the geographic distribution of elderly residents across census tracts, color-coded by median income.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{../figures/elderly_census_tract_map.png}
+\caption{Geographic Distribution of Elderly Residents by Census Tract (Color-coded by Median Income)}
+\label{fig:census_tract_map}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Top 10 Census Tracts by Elderly Count}
+\label{tab:tract_distribution}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Census Tract} & \textbf{Elderly Count} & \textbf{Median Income} & \textbf{Avg Age} \\
+\midrule
+Tract 5.05 & 965 & \$80,556 & 78.6 \\
+Tract 7.01 & 350 & \$93,326 & 77.8 \\
+Tract 4.02 & 344 & \$111,705 & 72.9 \\
+Tract 4.01 & 335 & \$75,366 & 72.0 \\
+Tract 5.02 & 330 & \$82,125 & 73.3 \\
+Tract 5.03 & 273 & \$92,560 & 74.7 \\
+Tract 3.01 & 265 & \$131,206 & 73.4 \\
+Tract 5.06 & 253 & \$73,403 & 75.2 \\
+Tract 8.04 & 251 & \$81,853 & 72.0 \\
+Tract 2.02 & 244 & \$88,625 & 73.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Mapping and Geocoding Status}
+
+The ability to map elderly residents to specific buildings and properties is essential for housing analysis. The mapping status is as follows.
+
+\begin{itemize}
+    \item \textbf{Mapped to Buildings}: 5,391 elderly (72.9\% of total)
+    \item \textbf{Geocoded (has lat/long)}: 7,371 elderly (99.7\% of total)
+    \item \textbf{Mapped AND Geocoded}: 5,388 elderly (72.9\% of total)
+\end{itemize}
+
+The high geocoding success rate (99.7\%) indicates that most elderly residents have valid addresses, enabling detailed geographic analysis and mapping.
+
+\subsection{Key Insights}
+
+\begin{enumerate}
+    \item \textbf{High Concentration}: Elderly residents are highly concentrated in specific precincts (up to 39.7\% in Precinct 21-13) and streets (up to 77.7\% on Wallingford Rd), indicating potential areas for targeted housing interventions.
+    
+    \item \textbf{Geographic Clustering}: Strong clustering in Allston (Ward 21), particularly in precincts 13, 16, and 12, suggests these areas may benefit from concentrated senior housing resources.
+    
+    \item \textbf{Income Diversity}: Elderly residents live across a wide range of income levels, from lower-income (\$33K) to higher-income (\$151K) census tracts, indicating diverse housing needs and affordability challenges.
+    
+    \item \textbf{Mapping Coverage}: 72.9\% mapping rate allows for detailed building-level analysis, enabling assessment of housing conditions and property values.
+\end{enumerate}
+
+\section{What Supports Are Needed to Connect Elderly Residents with Housing Resources?}
+
+Understanding barriers to housing access and eligibility for affordable senior housing is essential for developing effective support services and resource allocation strategies.
+
+\subsection{Eligibility for Affordable Senior Housing}
+
+After excluding residents already in income-restricted or senior housing projects, 6,958 elderly residents were analyzed for eligibility. The analysis reveals significant demand for affordable senior housing:
+
+\begin{table}[H]
+\centering
+\caption{Eligibility for Affordable Senior Housing}
+\label{tab:eligibility}
+\begin{tabular}{lr}
+\toprule
+\textbf{Priority Level} & \textbf{Resident Count} \\
+\midrule
+Very High Priority (36-100 points) & 5 (0.1\%) \\
+High Priority (26-35 points) & 164 (2.4\%) \\
+Medium Priority (11-25 points) & 921 (13.2\%) \\
+Total Qualifying (Medium + High + Very High) & 1,090 (15.7\%) \\
+Low Priority (0-10 points) & 5,868 (84.3\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Key Eligibility Factors}
+
+\subsubsection{Income Eligibility}
+
+Income-based eligibility is a primary factor in determining housing need:
+
+\begin{table}[H]
+\centering
+\caption{Income-Based Eligibility}
+\label{tab:income_eligibility}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Income Category} & \textbf{Resident Count} & \textbf{Percentage} \\
+\midrule
+Low Income (<\$50k census tract) & 562 & 11.8\% \\
+Moderate Income (\$50k-\$75k) & 475 & 10.0\% \\
+Total Income-Eligible & 1,037 & 21.8\% \\
+Higher Income (>\$75k) & 3,720 & 78.2\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Housing Quality Barriers}
+
+Housing condition issues represent significant barriers to safe and adequate housing:
+
+\begin{itemize}
+    \item \textbf{Poor/Fair Housing Conditions}: 133 residents (2.7\% of those with condition data)
+    \item \textbf{Open Property Violations}: 35 residents (0.5\%)
+\end{itemize}
+
+\subsubsection{Residency Stability}
+
+Residential stability is an important factor for housing eligibility and community integration:
+
+\begin{itemize}
+    \item \textbf{5+ Years at Current Address}: 4,933 residents (71.1\%)
+    \item \textbf{Not Mapped}: 2,005 residents (28.9\%)
+\end{itemize}
+
+\textbf{Important Note}: Building matching indicates address-level matching capability, but does NOT verify actual residency length or continuity. The matching is spatial, not temporal.
+
+\subsubsection{Amenity Accessibility}
+
+Access to essential amenities (stores and parks) is important for quality of life:
+
+\begin{table}[H]
+\centering
+\caption{Amenity Accessibility}
+\label{tab:amenity_access}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Amenity Type} & \textbf{Access Level} & \textbf{Resident Count} \\
+\midrule
+\multirow{3}{*}{Store Access} & Excellent ($\leq$500m) & 3,391 (48.9\%) \\
+ & Good (500-1000m) & 203 (2.9\%) \\
+ & Limited (>1000m) & 4 (0.1\%) \\
+\midrule
+\multirow{3}{*}{Park Access} & Excellent ($\leq$300m) & 6,326 (91.5\%) \\
+ & Good (300-600m) & 583 (8.4\%) \\
+ & Limited (>600m) & 4 (0.1\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Barriers to Housing Access}
+
+\subsubsection{Financial Barriers}
+
+Financial constraints are the most common barrier facing elderly residents:
+
+\begin{table}[H]
+\centering
+\caption{Financial Barriers}
+\label{tab:financial_barriers}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Barrier Type} & \textbf{Resident Count} & \textbf{Percentage} \\
+\midrule
+Low Income (<\$50k census tract) & 562 & 8.1\% \\
+Moderate Income (\$50k-\$75k) & 475 & 6.8\% \\
+Total Financial Barriers & 1,037 & 14.9\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Building Condition Barriers}
+
+Housing quality issues affect a smaller but significant portion of elderly residents:
+
+\begin{itemize}
+    \item \textbf{Poor/Fair Housing Conditions}: 133 residents (2.7\%)
+    \begin{itemize}
+        \item Interior barriers: 78 residents
+        \item Exterior barriers: 71 residents
+        \item Grade barriers: 3 residents
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Property Violations}
+
+Active property violations indicate immediate housing quality concerns:
+
+\begin{itemize}
+    \item \textbf{Open Violations}: 35 residents (0.5\%)
+    \item Violation categories include safety issues, maintenance problems, and permit/code violations
+\end{itemize}
+
+\subsubsection{Accessibility Barriers}
+
+Accessibility barriers are minimal, indicating generally good access to essential amenities:
+
+\begin{itemize}
+    \item \textbf{Limited Store Access} (>1000m): 4 residents (0.1\%)
+    \item \textbf{Limited Park Access} (>600m): 4 residents (0.1\%)
+\end{itemize}
+
+\subsubsection{Combined Barriers}
+
+Some residents face multiple compounding barriers:
+
+\begin{itemize}
+    \item \textbf{Elderly with Any Barrier}: 1,037 residents (14.9\%)
+    \item \textbf{Elderly with Multiple Barriers (2+)}: ~168 residents (2.4\%)
+    \item \textbf{Elderly with High Barriers (3+)}: ~35 residents (0.5\%)
+\end{itemize}
+
+\subsection{Support Services Needed}
+
+Based on the barrier analysis, the following support services are needed to connect elderly residents with housing resources:
+
+\begin{enumerate}
+    \item \textbf{Financial Assistance Programs}:
+    \begin{itemize}
+        \item Income-based rental assistance for 1,037 residents facing financial barriers
+        \item Property tax relief programs for low-income homeowners
+        \item Utility assistance programs
+    \end{itemize}
+    
+    \item \textbf{Housing Quality Improvement}:
+    \begin{itemize}
+        \item Home repair programs for 133 residents with poor/fair housing conditions
+        \item Violation remediation assistance for 35 residents with open violations
+        \item Accessibility modifications for aging in place
+    \end{itemize}
+    
+    \item \textbf{Housing Navigation Services}:
+    \begin{itemize}
+        \item Eligibility screening and application assistance for 1,090 qualifying residents
+        \item Housing search assistance and landlord mediation
+        \item Transition support services for residents moving to senior housing
+    \end{itemize}
+    
+    \item \textbf{Outreach and Education}:
+    \begin{itemize}
+        \item Targeted outreach to 1,090 eligible residents
+        \item Information about available housing resources and programs
+        \item Community workshops on housing rights and resources
+    \end{itemize}
+    
+    \item \textbf{Geographic Targeting}:
+    \begin{itemize}
+        \item Focus on high-concentration areas (Precincts 21-13, 21-16, 21-12)
+        \item Street-level outreach in areas with high elderly density
+        \item Census tract-level resource allocation based on need
+    \end{itemize}
+\end{enumerate}
+
+\section{How Could Shifting Elderly Residents to New Units Affect Broader Neighborhood Housing Dynamics?}
+
+Understanding the market impact of transitioning elderly residents to new senior housing is crucial for planning sustainable community development and assessing neighborhood-level effects. The geographic concentration of eligible candidates directly impacts where market effects will be most pronounced.
+
+\subsection{Project Context}
+
+This analysis evaluates the housing market impact of a proposed 50-60 unit affordable senior housing project in Allston-Brighton. To fill 50-60 units, an outreach pool of 200-300 candidates is needed, assuming a 20-30\% response/acceptance rate.
+
+\subsection{Expanded Outreach Pool}
+
+An expanded outreach pool of 300 top priority candidates was identified to ensure sufficient response for the project:
+
+\begin{table}[H]
+\centering
+\caption{Expanded Outreach Pool Characteristics}
+\label{tab:outreach_pool}
+\begin{tabular}{lr}
+\toprule
+\textbf{Characteristic} & \textbf{Value} \\
+\midrule
+Total Pool Size & 300 candidates \\
+Very High Priority & 5 candidates (1.7\%) \\
+High Priority & 164 candidates (54.7\%) \\
+Medium Priority & 136 candidates (45.3\%) \\
+Average Eligibility Score & 27.1 (range: 11-40) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Tenure Distribution in Outreach Pool}
+
+Understanding tenure status is critical for assessing market impact:
+
+\begin{table}[H]
+\centering
+\caption{Tenure Distribution in Expanded Outreach Pool}
+\label{tab:tenure_pool}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Tenure Status} & \textbf{Count} & \textbf{Percentage} \\
+\midrule
+Homeowners & 158 & 52.7\% \\
+Renters & 90 & 30.0\% \\
+Unknown Tenure & 52 & 17.3\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Homeowner Property Analysis}
+
+The 158 homeowner candidates in the expanded pool represent significant property value:
+
+\begin{table}[H]
+\centering
+\caption{Homeowner Property Value in Expanded Outreach Pool}
+\label{tab:homeowner_properties}
+\begin{tabular}{lr}
+\toprule
+\textbf{Property Characteristic} & \textbf{Value} \\
+\midrule
+Total Homeowner Candidates & 158 \\
+Total Estimated Property Value & \$169,182,900 \\
+Average Property Value & \$1,070,778 \\
+Median Property Value & \$1,070,778 \\
+Property Value Range & \$531,000 - \$1,839,300 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Estimated Market Impact}
+
+If 20-30\% of homeowner candidates accept housing offers, the following property values would become available:
+
+\begin{table}[H]
+\centering
+\caption{Estimated Market Impact by Acceptance Rate}
+\label{tab:market_impact}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Scenario} & \textbf{Acceptance Rate} & \textbf{Homeowners} & \textbf{Property Value} \\
+\midrule
+Conservative & 20\% & 31 & \$32,317,600 \\
+Moderate & 30\% & 47 & \$48,967,700 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Top 60 Candidates Analysis}
+
+A detailed analysis of the top 60 priority candidates provides insights into immediate market impact:
+
+\begin{table}[H]
+\centering
+\caption{Top 60 Candidates Profile}
+\label{tab:top60_profile}
+\begin{tabular}{lr}
+\toprule
+\textbf{Characteristic} & \textbf{Value} \\
+\midrule
+Total Candidates & 60 \\
+Very High Priority & 5 (8.3\%) \\
+High Priority & 55 (91.7\%) \\
+Medium Priority & 0 (0.0\%) \\
+Average Eligibility Score & 31.1 (range: 28-35) \\
+Average Age & 76.2 years \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Tenure Breakdown of Top 60}
+
+\begin{table}[H]
+\centering
+\caption{Tenure Status of Top 60 Candidates}
+\label{tab:top60_tenure}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Tenure Status} & \textbf{Count} & \textbf{Percentage} \\
+\midrule
+Homeowners & 43 & 71.7\% \\
+Renters & 17 & 28.3\% \\
+Unknown Tenure & 0 & 0.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Properties That Would Become Available}
+
+The 26 homeowner candidates in the top 60 represent properties that would become available:
+
+\begin{table}[H]
+\centering
+\caption{Properties Available from Top 60 Homeowners}
+\label{tab:top60_properties}
+\begin{tabular}{lr}
+\toprule
+\textbf{Property Characteristic} & \textbf{Value} \\
+\midrule
+Total Homeowner Candidates & 43 \\
+Total Property Value & \$45,032,000 \\
+Average Property Value & \$1,046,558 \\
+Median Property Value & \$1,046,558 \\
+Property Value Range & \$531,000 - \$1,839,300 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Geographic Distribution of Market Impact}
+
+Market impact is concentrated in specific neighborhoods, enabling targeted planning:
+
+\subsubsection{Distribution by Ward}
+
+\begin{table}[H]
+\centering
+\caption{Market Impact Distribution by Ward}
+\label{tab:ward_impact}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Ward} & \textbf{Candidates} & \textbf{Percentage} & \textbf{Homeowners} \\
+\midrule
+Ward 21 (Allston) & 101 & 33.7\% & 25 \\
+Ward 22 (Brighton) & 199 & 66.3\% & 125 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Top Census Tracts for Market Impact}
+
+\begin{table}[H]
+\centering
+\caption{Top Census Tracts by Candidate Concentration}
+\label{tab:tract_impact}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Census Tract} & \textbf{Median Income} & \textbf{Candidates} & \textbf{Homeowners} \\
+\midrule
+Tract 101.03 & \$45,000 & 115 & 86 \\
+Tract 7.03 & \$46,985 & 95 & 20 \\
+Tract 6.03 & \$33,229 & 75 & 9 \\
+Tract 5.06 & \$73,403 & 10 & 1 \\
+Tract 8.05 & \$53,824 & 5 & 1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Neighborhood-Level Impact Analysis}
+
+The impact is distributed across 5 census tracts, with all affected neighborhoods having homeowner candidates:
+
+\begin{table}[H]
+\centering
+\caption{Neighborhood-Level Market Impact}
+\label{tab:neighborhood_impact}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Census Tract} & \textbf{Candidates} & \textbf{Homeowners} & \textbf{Total Property Value} \\
+\midrule
+Tract 7.03 & 33 & 5 & \$6,908,300 \\
+Tract 101.03 & 14 & 10 & \$14,052,500 \\
+Tract 6.03 & 10 & 9 & \$8,464,800 \\
+Tract 5.06 & 2 & 1 & \$2,608,700 \\
+Tract 8.05 & 1 & 1 & \$592,100 \\
+\hline
+\textbf{Total} & \textbf{60} & \textbf{26} & \textbf{\$32,626,400} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Market Impact Assessment}
+
+\subsubsection{Property Sales Market}
+
+If all 43 homeowner candidates in the top 60 transition to senior housing, properties valued at \$45.0 million would enter the market. The expanded pool of 158 homeowners represents \$169.2 million in total property value, with an estimated \$32.3-\$49.0 million becoming available if 20-30\% accept.
+
+\subsubsection{Rental Market}
+
+The 6 renter candidates in the top 60, and 90 renter candidates in the expanded pool, would free up rental units if they transition to senior housing. This could provide housing opportunities for other residents while maintaining rental market supply.
+
+\subsubsection{Neighborhood Effects}
+
+\begin{enumerate}
+    \item \textbf{Concentrated Impact}: 95\% of top 60 candidates are in 3 low-income census tracts (7.03, 101.03, 6.03), enabling efficient outreach but potentially creating localized market impact.
+    
+    \item \textbf{Property Availability}: All affected neighborhoods have homeowner candidates, ensuring property availability for new residents or redevelopment.
+    
+    \item \textbf{Housing Supply}: The transition would add properties to the market, potentially increasing housing supply in areas with high demand.
+    
+    \item \textbf{Property Values}: Average property values (\$1.02M-\$1.09M) suggest established homeowners with equity, which could support neighborhood stability during transitions.
+\end{enumerate}
+
+\subsection{Outreach Strategy}
+
+Based on the market impact analysis, the following outreach strategy is recommended:
+
+\begin{enumerate}
+    \item \textbf{Geographic Targeting}:
+    \begin{itemize}
+        \item Prioritize Ward 21 Precinct 7 (Census Tract 7.03) with 33 candidates
+        \item Focus on Ward 22 Precincts 1, 5, and 2 (Census Tracts 101.03, 6.03)
+        \item Target areas with highest candidate concentrations for efficient outreach
+    \end{itemize}
+    
+    \item \textbf{Phased Approach}:
+    \begin{itemize}
+        \item Start with top 60 candidates (highest priority)
+        \item Expand to full 200-300 pool based on response rates
+        \item Monitor acceptance rates and adjust outreach accordingly
+    \end{itemize}
+    
+    \item \textbf{Demographic Targeting}:
+    \begin{itemize}
+        \item Focus on ages 70-89 (63.3\% of candidates) who may be most ready to transition
+        \item Prioritize Low Income candidates (95\% of top 60)
+        \item Target residents with poor housing conditions (46.7\% of top 60)
+    \end{itemize}
+    
+    \item \textbf{Multi-Channel Outreach}:
+    \begin{itemize}
+        \item Door-to-door in top census tracts
+        \item Community events in high-concentration areas
+        \item Mail outreach to all candidates
+        \item Information sessions at community centers
+    \end{itemize}
+\end{enumerate}
+
+\section{Discussion}
+
+\subsection{Synthesis of Findings}
+
+This analysis reveals several key insights for housing policy and community development in Allston-Brighton:
+
+\begin{enumerate}
+    \item \textbf{Significant Demand}: 1,090 elderly residents (15.7\%) qualify as Medium to Very High priority for affordable senior housing, with 169 residents (2.4\%) in High or Very High priority indicating the most urgent need.
+    
+    \item \textbf{Geographic Concentration}: Elderly residents and eligible candidates are highly concentrated in specific neighborhoods, enabling targeted interventions but also highlighting areas of concentrated need.
+    
+    \item \textbf{Financial Barriers Predominate}: 14.9\% of elderly residents face financial barriers, making income-based assistance a critical support service.
+    
+    \item \textbf{Market Impact Potential}: The proposed 50-60 unit project could free up properties valued at \$32.3-\$49.0 million, potentially increasing housing supply in high-demand areas.
+    
+    \item \textbf{Support Services Needed}: Multiple support services are required, including financial assistance, housing quality improvement, navigation services, and targeted outreach.
+\end{enumerate}
+
+\subsection{Policy Implications}
+
+\begin{enumerate}
+    \item \textbf{Housing Development}: The analysis supports development of the proposed 50-60 unit senior housing project, with clear identification of 1,090 eligible candidates, including 169 High and Very High priority residents.
+    
+    \item \textbf{Resource Allocation}: Geographic concentration supports efficient resource allocation, focusing services on high-need areas (Precincts 21-13, 21-16, 21-12).
+    
+    \item \textbf{Market Planning}: Understanding market impact supports proactive planning for neighborhood transitions and housing supply management.
+    
+    \item \textbf{Support Services}: The barrier analysis identifies specific support services needed, enabling targeted program development.
+\end{enumerate}
+
+\subsection{Limitations}
+
+\begin{enumerate}
+    \item \textbf{Residency Length}: Building matching is spatial (address matching), not temporal (residency verification). The 5-year minimum residency is an inference from data matching, not verified residency.
+    
+    \item \textbf{Tenure Data}: 20-46.7\% of candidates have unknown tenure status, limiting full market impact assessment.
+    
+    \item \textbf{Property Values}: Assessed values may differ from market values, affecting impact estimates.
+    
+    \item \textbf{Response Rates}: Market impact estimates assume 20-30\% acceptance rates, which may vary based on outreach effectiveness and resident preferences.
+    
+    \item \textbf{Market Dynamics}: The analysis cannot predict actual market response to property availability, including pricing, demand, and neighborhood effects.
+\end{enumerate}
+
+\section{Conclusions}
+
+This analysis provides insights for housing policy and community development in Allston-Brighton:
+
+\begin{enumerate}
+    \item \textbf{Elderly Population Profile}: 7,396 elderly residents (16.9\% of voters) are highly concentrated in specific neighborhoods, with significant geographic clustering enabling targeted interventions.
+    
+    \item \textbf{Housing Need}: 1,090 residents (15.7\%) qualify for affordable senior housing, with 169 residents (2.4\%) in High or Very High priority indicating the most urgent need. Financial barriers are the most common challenge (14.9\% of elderly residents).
+    
+    \item \textbf{Support Services Required}: Multiple support services are needed, including financial assistance, housing quality improvement, navigation services, and targeted outreach, with geographic concentration enabling efficient resource allocation.
+    
+    \item \textbf{Market Impact}: The proposed 50-60 unit project could free up properties valued at \$32.3-\$49.0 million, potentially increasing housing supply in high-demand areas while maintaining neighborhood stability.
+    
+    \item \textbf{Outreach Strategy}: A phased, geographically-targeted outreach strategy focusing on high-concentration areas and high-priority candidates is recommended to maximize project success.
+\end{enumerate}
+
+These findings provide a foundation for evidence-based housing policy, resource allocation, and community development planning in Allston-Brighton, supporting the goal of meeting the housing needs of the aging population while maintaining neighborhood vitality and housing market stability.
+
+\section{Recommendations}
+
+Based on this analysis, the following recommendations are made:
+
+\begin{enumerate}
+    \item \textbf{Proceed with 50-60 Unit Project}: The analysis supports development of the proposed senior housing project, with clear identification of 1,090 eligible candidates (including 169 High/Very High priority) and an expanded outreach pool of 300 candidates.
+    
+    \item \textbf{Implement Phased Outreach Strategy}: Begin with top 60 candidates, expanding to full 200-300 pool based on response rates, with geographic targeting in high-concentration areas.
+    
+    \item \textbf{Develop Support Services}: Establish financial assistance, housing quality improvement, navigation services, and targeted outreach programs to address identified barriers.
+    
+    \item \textbf{Monitor Market Impact}: Track property sales, rental availability, and neighborhood effects post-transition to inform future housing development and policy.
+    
+    \item \textbf{Geographic Resource Allocation}: Focus resources on high-need areas (Precincts 21-13, 21-16, 21-12) while maintaining services across all neighborhoods.
+    
+    \item \textbf{Data Collection Improvement}: Enhance tenure data collection and residency verification to improve market impact assessment and outreach targeting.
+\end{enumerate}
+
+\newpage
+\section*{References}
+
+\begin{itemize}
+    \item Allston-Brighton Community Development Corporation. (2024). \textit{Elderly Housing Analysis: Data Sources and Methodology}. Internal Documentation.
+    
+    \item City of Boston. (2025). \textit{FY2025 Property Assessment Data}. Assessor's Office.
+    
+    \item City of Boston. (2020). \textit{Voter Registration Records}. Election Department.
+    
+    \item U.S. Census Bureau. (2020). \textit{American Community Survey 5-Year Estimates}. Census Tract Data for Suffolk County, Massachusetts.
+    
+    \item Massachusetts Department of Revenue. (2025). \textit{Property Violation Records}. Division of Local Services.
+\end{itemize}
+
+\newpage
+\section*{Appendix A: Data Sources and Methodology Details}
+
+\subsection{Data Sources}
+
+\begin{itemize}
+    \item \textbf{Voter Registration Data (2020)}: 43,759 registered voters in Wards 21 and 22
+    \item \textbf{Property Assessment Data (2025)}: Building characteristics, property values, housing conditions
+    \item \textbf{Census Tract Data}: Median income, demographic characteristics
+    \item \textbf{Property Violations}: Open and closed violations
+    \item \textbf{Amenity Data}: Store and park locations
+\end{itemize}
+
+\subsection{Analysis Methods}
+
+\begin{itemize}
+    \item \textbf{Geographic Matching}: Address-based spatial matching between voter and property data
+    \item \textbf{Eligibility Scoring}: 0-100 point scoring system
+    \item \textbf{Market Impact Modeling}: Property value aggregation and acceptance rate scenarios
+    \item \textbf{Statistical Analysis}: Descriptive statistics, geographic distribution analysis
+\end{itemize}
+
+\subsection{Exclusion Criteria}
+
+\begin{itemize}
+    \item Income-restricted buildings: 5 buildings excluded
+    \item Senior housing addresses: 12 addresses with 50+ elderly residents excluded
+    \item Total excluded: 458 residents (6.2\% of total elderly population)
+\end{itemize}
+
+\end{document}
+

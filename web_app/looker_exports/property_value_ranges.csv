@@ -1,0 +1,6 @@
+value_range,building_count,avg_value,total_res_units,unique_buildings
+Under $250K,674,8874.0,19218.0,674
+$250K-$500K,45,403997.89,,45
+$500K-$750K,625,661990.67,,625
+$750K-$1M,1665,888705.53,,1665
+$1M+,4993,9850367.5,,4993

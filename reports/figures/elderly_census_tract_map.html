@@ -1,0 +1,3304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fa0a4b5ff4addfaa2ed32cd919f1cdc3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumpopup {
+                            margin: auto;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fa0a4b5ff4addfaa2ed32cd919f1cdc3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fa0a4b5ff4addfaa2ed32cd919f1cdc3 = L.map(
+                "map_fa0a4b5ff4addfaa2ed32cd919f1cdc3",
+                {
+                    center: [42.35099985434575, -71.14530545974976],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2b924c89a4359bea97db3d493f22d9c6 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2b924c89a4359bea97db3d493f22d9c6.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_65b04c60442f52257f03d2908be8c2fd = L.marker(
+                [42.34355452747253, -71.14985885838462],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_42ad2070fd15bb776c4a93537a96cee8 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    965\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_65b04c60442f52257f03d2908be8c2fd.setIcon(div_icon_42ad2070fd15bb776c4a93537a96cee8);
+            
+    
+        function geo_json_45653b00a69a17dd4bf79bd255e644ff_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#fee08b", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_45653b00a69a17dd4bf79bd255e644ff_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_45653b00a69a17dd4bf79bd255e644ff = L.geoJson(null, {
+                onEachFeature: geo_json_45653b00a69a17dd4bf79bd255e644ff_onEachFeature,
+            
+                style: geo_json_45653b00a69a17dd4bf79bd255e644ff_styler,
+            ...{
+}
+        });
+
+        function geo_json_45653b00a69a17dd4bf79bd255e644ff_add (data) {
+            geo_json_45653b00a69a17dd4bf79bd255e644ff
+                .addData(data);
+        }
+            geo_json_45653b00a69a17dd4bf79bd255e644ff_add({"features": [{"geometry": {"coordinates": [[[-71.154734001, 42.341206], [-71.154553001, 42.341557], [-71.154356001, 42.341845], [-71.154197002, 42.342065], [-71.153841001, 42.342586], [-71.153632001, 42.342929], [-71.153462002, 42.343183], [-71.153417002, 42.343289], [-71.153393002, 42.343484], [-71.153421001, 42.343814], [-71.153451001, 42.343953], [-71.153457001, 42.344144], [-71.153434002, 42.344316], [-71.153368001, 42.344504], [-71.153274001, 42.34465], [-71.153072001, 42.345106], [-71.153039001, 42.345158], [-71.152947001, 42.345409], [-71.152910002, 42.345645], [-71.152937001, 42.345828], [-71.152997002, 42.345996], [-71.153067001, 42.346154], [-71.152812001, 42.346155], [-71.152446001, 42.346096], [-71.151646001, 42.345909], [-71.151235002, 42.345813], [-71.151010001, 42.346197], [-71.150898001, 42.346387], [-71.150692002, 42.34671], [-71.150073001, 42.347675], [-71.149755001, 42.348185], [-71.149368002, 42.347754], [-71.149047001, 42.347457], [-71.148651001, 42.347198], [-71.148344001, 42.347019], [-71.148043001, 42.346857], [-71.147741001, 42.346747], [-71.147316001, 42.346582], [-71.146514001, 42.346247], [-71.146351001, 42.346167], [-71.146238001, 42.346106], [-71.146096001, 42.345986], [-71.145862002, 42.345755], [-71.145661001, 42.345523], [-71.145560001, 42.345413], [-71.145335001, 42.345203], [-71.145049001, 42.344963], [-71.144543001, 42.344623], [-71.143728001, 42.34419], [-71.143109002, 42.343878], [-71.143428001, 42.343451], [-71.143587001, 42.343224], [-71.143655001, 42.343137], [-71.143819002, 42.342978], [-71.144074002, 42.342744], [-71.144358002, 42.342526], [-71.144726001, 42.342318], [-71.145121002, 42.342138], [-71.145477001, 42.342013], [-71.145923001, 42.341897], [-71.146115001, 42.34186], [-71.146460001, 42.341811], [-71.146742001, 42.341791], [-71.147007001, 42.341782], [-71.147306001, 42.341784], [-71.147627002, 42.341801], [-71.148071001, 42.341832], [-71.148633002, 42.341814], [-71.148840001, 42.341781], [-71.149295001, 42.341687], [-71.149656001, 42.341583], [-71.149972001, 42.341466], [-71.150265001, 42.341322], [-71.150403001, 42.341217], [-71.150487002, 42.341055], [-71.150922001, 42.340764], [-71.151150002, 42.340601], [-71.151308001, 42.340479], [-71.151382001, 42.340423], [-71.151648002, 42.340535], [-71.151963001, 42.340598], [-71.152195001, 42.340621], [-71.152623001, 42.340628], [-71.153111001, 42.340696], [-71.153530002, 42.340793], [-71.153778001, 42.340855], [-71.154061001, 42.340979], [-71.154462001, 42.341198], [-71.154537001, 42.341225], [-71.154623001, 42.341233], [-71.154734001, 42.341206]]], "type": "Polygon"}, "properties": {"elderly_count": 965, "median_income": 80556.0, "tract_id": "25025000505", "tract_name": "Census Tract 5.05; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_45653b00a69a17dd4bf79bd255e644ff.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_45653b00a69a17dd4bf79bd255e644ff.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_45653b00a69a17dd4bf79bd255e644ff.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_d2bcb08dcd60439c46a4b5dc3e26d39f = L.marker(
+                [42.34029336448598, -71.14517039383178],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_53cbe0a456d1077f2a4774b7617f6a8d = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    350\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_d2bcb08dcd60439c46a4b5dc3e26d39f.setIcon(div_icon_53cbe0a456d1077f2a4774b7617f6a8d);
+            
+    
+        function geo_json_3c0fcf7a0b583abafb08ab93622f1e3f_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#fbfdba", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_3c0fcf7a0b583abafb08ab93622f1e3f_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_3c0fcf7a0b583abafb08ab93622f1e3f = L.geoJson(null, {
+                onEachFeature: geo_json_3c0fcf7a0b583abafb08ab93622f1e3f_onEachFeature,
+            
+                style: geo_json_3c0fcf7a0b583abafb08ab93622f1e3f_styler,
+            ...{
+}
+        });
+
+        function geo_json_3c0fcf7a0b583abafb08ab93622f1e3f_add (data) {
+            geo_json_3c0fcf7a0b583abafb08ab93622f1e3f
+                .addData(data);
+        }
+            geo_json_3c0fcf7a0b583abafb08ab93622f1e3f_add({"features": [{"geometry": {"coordinates": [[[-71.149839002, 42.337665], [-71.149658002, 42.33798], [-71.149468001, 42.338281], [-71.149286001, 42.338632], [-71.148847001, 42.339358], [-71.148696001, 42.339538], [-71.148378001, 42.339899], [-71.148080001, 42.34017], [-71.147571002, 42.340611], [-71.147333001, 42.340837], [-71.146982002, 42.341192], [-71.146891001, 42.34132], [-71.146860001, 42.341372], [-71.146311001, 42.341419], [-71.145961001, 42.34148], [-71.145779001, 42.341516], [-71.145802001, 42.34158], [-71.145829001, 42.341659], [-71.145870002, 42.341774], [-71.145923001, 42.341897], [-71.145477001, 42.342013], [-71.145121002, 42.342138], [-71.144726001, 42.342318], [-71.144358002, 42.342526], [-71.144074002, 42.342744], [-71.143819002, 42.342978], [-71.143655001, 42.343137], [-71.143587001, 42.343224], [-71.143428001, 42.343451], [-71.143109002, 42.343878], [-71.142960001, 42.343794], [-71.142835001, 42.343721], [-71.142744001, 42.343669], [-71.142675002, 42.343629], [-71.142313002, 42.343409], [-71.142112001, 42.343287], [-71.141918001, 42.343189], [-71.141518001, 42.342952], [-71.142114001, 42.342224], [-71.142313002, 42.341973], [-71.142368002, 42.341889], [-71.142503002, 42.34173], [-71.142559001, 42.341682], [-71.142700001, 42.341545], [-71.142938001, 42.341338], [-71.143067001, 42.341262], [-71.143099001, 42.341243], [-71.143266001, 42.341187], [-71.143422001, 42.341148], [-71.143725001, 42.341124], [-71.144012001, 42.34111], [-71.144249002, 42.34107], [-71.144474001, 42.341011], [-71.144843001, 42.340881], [-71.144757001, 42.340769], [-71.144692001, 42.340707], [-71.144619001, 42.340636], [-71.144453001, 42.340548], [-71.144239001, 42.340468], [-71.144013001, 42.340423], [-71.143729002, 42.34041], [-71.143321001, 42.340412], [-71.143133001, 42.34042], [-71.142964001, 42.340411], [-71.142434002, 42.340308], [-71.142203001, 42.340429], [-71.142048001, 42.340448], [-71.141896002, 42.340436], [-71.141754001, 42.340396], [-71.141939002, 42.340008], [-71.142344001, 42.340055], [-71.142395002, 42.340061], [-71.142487002, 42.340059], [-71.142508002, 42.340059], [-71.142631002, 42.340056], [-71.144212001, 42.340022], [-71.144655001, 42.339737], [-71.144688001, 42.339716], [-71.144779001, 42.339657], [-71.145275002, 42.339338], [-71.145560001, 42.339131], [-71.145804001, 42.338955], [-71.146162001, 42.338697], [-71.146215001, 42.338632], [-71.146245001, 42.338595], [-71.146506001, 42.338554], [-71.146606002, 42.338537], [-71.146489002, 42.338161], [-71.146416001, 42.338101], [-71.146342001, 42.338036], [-71.146259001, 42.337772], [-71.146156001, 42.337442], [-71.146454002, 42.337377], [-71.146749002, 42.337313], [-71.147266002, 42.337201], [-71.147281001, 42.337262], [-71.147346002, 42.337512], [-71.147741001, 42.337455], [-71.148701001, 42.337267], [-71.148956002, 42.337196], [-71.149197001, 42.33709], [-71.149355001, 42.33699], [-71.149476001, 42.336929], [-71.150084001, 42.336842], [-71.150309001, 42.336842], [-71.150105001, 42.337193], [-71.149839002, 42.337665]]], "type": "Polygon"}, "properties": {"elderly_count": 350, "median_income": 93326.0, "tract_id": "25025000701", "tract_name": "Census Tract 7.01; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_3c0fcf7a0b583abafb08ab93622f1e3f.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_3c0fcf7a0b583abafb08ab93622f1e3f.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_3c0fcf7a0b583abafb08ab93622f1e3f.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_baabdb202c2631498e7f6da8877925be = L.marker(
+                [42.352638977272726, -71.15428979681818],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_854902919405cf033d335105a62e9517 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    344\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_baabdb202c2631498e7f6da8877925be.setIcon(div_icon_854902919405cf033d335105a62e9517);
+            
+    
+        function geo_json_ba56ddfd8e09d765705786e80a644b58_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#b9e176", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_ba56ddfd8e09d765705786e80a644b58_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_ba56ddfd8e09d765705786e80a644b58 = L.geoJson(null, {
+                onEachFeature: geo_json_ba56ddfd8e09d765705786e80a644b58_onEachFeature,
+            
+                style: geo_json_ba56ddfd8e09d765705786e80a644b58_styler,
+            ...{
+}
+        });
+
+        function geo_json_ba56ddfd8e09d765705786e80a644b58_add (data) {
+            geo_json_ba56ddfd8e09d765705786e80a644b58
+                .addData(data);
+        }
+            geo_json_ba56ddfd8e09d765705786e80a644b58_add({"features": [{"geometry": {"coordinates": [[[-71.153762001, 42.357525], [-71.153449002, 42.357327], [-71.153194001, 42.357226], [-71.152947001, 42.357152], [-71.152204001, 42.356954], [-71.151297001, 42.356723], [-71.150987002, 42.356639], [-71.149532001, 42.356259], [-71.149082001, 42.356151], [-71.149535002, 42.355457], [-71.149809001, 42.355027], [-71.149965001, 42.3548], [-71.150087001, 42.354612], [-71.150358001, 42.354193], [-71.150533001, 42.353886], [-71.150707002, 42.353601], [-71.150881001, 42.35335], [-71.150394002, 42.353237], [-71.149284001, 42.352938], [-71.148639001, 42.352785], [-71.148100002, 42.352644], [-71.147261001, 42.352434], [-71.146743002, 42.352294], [-71.147141002, 42.351575], [-71.147279002, 42.351356], [-71.147364002, 42.351195], [-71.147862002, 42.350345], [-71.148023002, 42.350391], [-71.149071001, 42.350735], [-71.150274001, 42.351115], [-71.150949002, 42.351324], [-71.151915001, 42.35164], [-71.152096001, 42.351337], [-71.152384001, 42.350903], [-71.152816001, 42.350239], [-71.152964001, 42.350037], [-71.153070001, 42.349894], [-71.153330001, 42.349582], [-71.153421001, 42.349458], [-71.153449001, 42.349146], [-71.154020002, 42.349137], [-71.154438001, 42.349138], [-71.154715001, 42.349129], [-71.155224001, 42.349125], [-71.155746002, 42.349114], [-71.156475002, 42.349105], [-71.157079001, 42.34909], [-71.157388001, 42.349091], [-71.157808001, 42.349065], [-71.158025001, 42.349049], [-71.158236002, 42.349032], [-71.158654002, 42.348977], [-71.158830002, 42.34895], [-71.158996001, 42.348929], [-71.159156001, 42.348915], [-71.159326001, 42.348902], [-71.159612002, 42.348891], [-71.159904002, 42.348892], [-71.160437001, 42.348916], [-71.160393001, 42.349638], [-71.160363001, 42.350929], [-71.160304001, 42.352141], [-71.160505002, 42.352538], [-71.160565002, 42.352671], [-71.160178001, 42.352687], [-71.160054002, 42.352762], [-71.159866002, 42.352862], [-71.159730002, 42.352973], [-71.159014001, 42.353529], [-71.158594001, 42.353813], [-71.158496002, 42.353868], [-71.158059001, 42.354074], [-71.157467001, 42.354337], [-71.157085002, 42.354507], [-71.156709001, 42.354735], [-71.156406001, 42.355075], [-71.156135002, 42.355353], [-71.155848001, 42.355548], [-71.155675002, 42.355631], [-71.155465001, 42.355703], [-71.155254001, 42.35573], [-71.154999001, 42.355735], [-71.154329001, 42.355676], [-71.154266001, 42.356072], [-71.154045002, 42.35673], [-71.153885002, 42.357138], [-71.153824001, 42.357317], [-71.153762001, 42.357525]]], "type": "Polygon"}, "properties": {"elderly_count": 344, "median_income": 111705.0, "tract_id": "25025000402", "tract_name": "Census Tract 4.02; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_ba56ddfd8e09d765705786e80a644b58.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_ba56ddfd8e09d765705786e80a644b58.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_ba56ddfd8e09d765705786e80a644b58.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_7ff05ddd6000c8f02d60145d6c2c6187 = L.marker(
+                [42.35462399159664, -71.1609979424958],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_91ef98c0d6bf627695402a408fc39a18 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    335\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_7ff05ddd6000c8f02d60145d6c2c6187.setIcon(div_icon_91ef98c0d6bf627695402a408fc39a18);
+            
+    
+        function geo_json_d3bcd189d552e0b9e820bc4b33d581f4_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#feca79", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_d3bcd189d552e0b9e820bc4b33d581f4_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_d3bcd189d552e0b9e820bc4b33d581f4 = L.geoJson(null, {
+                onEachFeature: geo_json_d3bcd189d552e0b9e820bc4b33d581f4_onEachFeature,
+            
+                style: geo_json_d3bcd189d552e0b9e820bc4b33d581f4_styler,
+            ...{
+}
+        });
+
+        function geo_json_d3bcd189d552e0b9e820bc4b33d581f4_add (data) {
+            geo_json_d3bcd189d552e0b9e820bc4b33d581f4
+                .addData(data);
+        }
+            geo_json_d3bcd189d552e0b9e820bc4b33d581f4_add({"features": [{"geometry": {"coordinates": [[[-71.161769001, 42.35818], [-71.161574002, 42.35826], [-71.161462001, 42.358318], [-71.161241001, 42.358433], [-71.161032001, 42.358546], [-71.160899002, 42.358625], [-71.160679001, 42.358582], [-71.160553002, 42.358573], [-71.160445001, 42.358566], [-71.160095002, 42.358575], [-71.159393001, 42.35859], [-71.158954001, 42.358592], [-71.158402002, 42.358499], [-71.158296002, 42.358478], [-71.158184001, 42.358456], [-71.158026001, 42.358422], [-71.157536001, 42.358286], [-71.157321001, 42.358251], [-71.157076002, 42.35823], [-71.156596001, 42.358232], [-71.156280002, 42.358228], [-71.155947001, 42.358218], [-71.155630001, 42.3582], [-71.154914002, 42.358147], [-71.154693001, 42.358139], [-71.154499001, 42.358004], [-71.154322001, 42.357903], [-71.154093001, 42.35776], [-71.153958002, 42.357665], [-71.153893001, 42.357613], [-71.153863001, 42.357588], [-71.153762001, 42.357525], [-71.153824001, 42.357317], [-71.153885002, 42.357138], [-71.154045002, 42.35673], [-71.154266001, 42.356072], [-71.154329001, 42.355676], [-71.154999001, 42.355735], [-71.155254001, 42.35573], [-71.155465001, 42.355703], [-71.155675002, 42.355631], [-71.155848001, 42.355548], [-71.156135002, 42.355353], [-71.156406001, 42.355075], [-71.156709001, 42.354735], [-71.157085002, 42.354507], [-71.157467001, 42.354337], [-71.158059001, 42.354074], [-71.158496002, 42.353868], [-71.158594001, 42.353813], [-71.159014001, 42.353529], [-71.159730002, 42.352973], [-71.159866002, 42.352862], [-71.160054002, 42.352762], [-71.160178001, 42.352687], [-71.160565002, 42.352671], [-71.160505002, 42.352538], [-71.160304001, 42.352141], [-71.160363001, 42.350929], [-71.160393001, 42.349638], [-71.160437001, 42.348916], [-71.161304001, 42.348965], [-71.161622002, 42.348964], [-71.162138002, 42.348989], [-71.162425002, 42.348995], [-71.162762001, 42.349023], [-71.163093001, 42.349041], [-71.163333001, 42.349115], [-71.163385001, 42.349131], [-71.163744001, 42.349328], [-71.164268001, 42.349659], [-71.164501002, 42.349812], [-71.164733001, 42.349957], [-71.164860001, 42.350042], [-71.165129001, 42.350171], [-71.165392001, 42.350272], [-71.165549001, 42.350312], [-71.166126002, 42.350431], [-71.166644001, 42.3505], [-71.167394001, 42.350575], [-71.167605001, 42.350604], [-71.167602001, 42.350786], [-71.167584002, 42.351212], [-71.167687001, 42.351943], [-71.167751001, 42.352597], [-71.167806001, 42.352837], [-71.167831002, 42.353189], [-71.167815002, 42.353284], [-71.167747002, 42.353507], [-71.167643002, 42.353787], [-71.167110001, 42.353706], [-71.166508001, 42.353588], [-71.165875001, 42.353463], [-71.165620002, 42.353434], [-71.165323001, 42.353356], [-71.165196001, 42.353316], [-71.165091001, 42.353249], [-71.165022001, 42.353187], [-71.164872001, 42.353523], [-71.164800001, 42.353672], [-71.164664001, 42.353856], [-71.164573001, 42.354129], [-71.164495001, 42.354453], [-71.164303002, 42.355279], [-71.164216001, 42.355519], [-71.163372002, 42.355096], [-71.162785002, 42.354822], [-71.162610001, 42.355377], [-71.162557001, 42.355534], [-71.162441001, 42.355966], [-71.162328001, 42.356326], [-71.162275002, 42.356527], [-71.162092002, 42.357328], [-71.162081001, 42.357355], [-71.162052001, 42.357427], [-71.162030001, 42.357511], [-71.161986001, 42.357671], [-71.161899002, 42.358005], [-71.161769001, 42.35818]]], "type": "Polygon"}, "properties": {"elderly_count": 335, "median_income": 75366.0, "tract_id": "25025000401", "tract_name": "Census Tract 4.01; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_d3bcd189d552e0b9e820bc4b33d581f4.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_d3bcd189d552e0b9e820bc4b33d581f4.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_d3bcd189d552e0b9e820bc4b33d581f4.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_2247a4a0a101365633cf96e08521ffc9 = L.marker(
+                [42.35351078504673, -71.1688053096542],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_5bc8467d51dbf7ede8249923d62d994c = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    330\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_2247a4a0a101365633cf96e08521ffc9.setIcon(div_icon_5bc8467d51dbf7ede8249923d62d994c);
+            
+    
+        function geo_json_51781483637d39f54a1e1bf368078031_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#fee491", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_51781483637d39f54a1e1bf368078031_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_51781483637d39f54a1e1bf368078031 = L.geoJson(null, {
+                onEachFeature: geo_json_51781483637d39f54a1e1bf368078031_onEachFeature,
+            
+                style: geo_json_51781483637d39f54a1e1bf368078031_styler,
+            ...{
+}
+        });
+
+        function geo_json_51781483637d39f54a1e1bf368078031_add (data) {
+            geo_json_51781483637d39f54a1e1bf368078031
+                .addData(data);
+        }
+            geo_json_51781483637d39f54a1e1bf368078031_add({"features": [{"geometry": {"coordinates": [[[-71.169474001, 42.358047], [-71.167705001, 42.35798], [-71.166355001, 42.357964], [-71.165779001, 42.357953], [-71.163368001, 42.357937], [-71.162894001, 42.357953], [-71.162560001, 42.35799], [-71.162131001, 42.358056], [-71.161870002, 42.358138], [-71.161769001, 42.35818], [-71.161899002, 42.358005], [-71.161986001, 42.357671], [-71.162030001, 42.357511], [-71.162052001, 42.357427], [-71.162081001, 42.357355], [-71.162092002, 42.357328], [-71.162275002, 42.356527], [-71.162328001, 42.356326], [-71.162441001, 42.355966], [-71.162557001, 42.355534], [-71.162610001, 42.355377], [-71.162785002, 42.354822], [-71.163372002, 42.355096], [-71.164216001, 42.355519], [-71.164303002, 42.355279], [-71.164495001, 42.354453], [-71.164573001, 42.354129], [-71.164664001, 42.353856], [-71.164800001, 42.353672], [-71.164872001, 42.353523], [-71.165022001, 42.353187], [-71.165091001, 42.353249], [-71.165196001, 42.353316], [-71.165323001, 42.353356], [-71.165620002, 42.353434], [-71.165875001, 42.353463], [-71.166508001, 42.353588], [-71.167110001, 42.353706], [-71.167643002, 42.353787], [-71.167747002, 42.353507], [-71.167815002, 42.353284], [-71.167831002, 42.353189], [-71.167806001, 42.352837], [-71.167751001, 42.352597], [-71.167687001, 42.351943], [-71.167584002, 42.351212], [-71.167602001, 42.350786], [-71.167605001, 42.350604], [-71.167755002, 42.350617], [-71.167884002, 42.350649], [-71.168111001, 42.350663], [-71.168347001, 42.350346], [-71.168642002, 42.349978], [-71.168846001, 42.349738], [-71.168982001, 42.349643], [-71.169371001, 42.349511], [-71.169702002, 42.349411], [-71.169927001, 42.349383], [-71.170108001, 42.34939], [-71.170303001, 42.349429], [-71.170557001, 42.349503], [-71.171104001, 42.3497], [-71.171562001, 42.349852], [-71.171729001, 42.349909], [-71.171910002, 42.34995], [-71.172175001, 42.349982], [-71.172229001, 42.349988], [-71.172440001, 42.350008], [-71.172828001, 42.350046], [-71.172869001, 42.350051], [-71.174577001, 42.350242], [-71.174798001, 42.350265], [-71.174798001, 42.350277], [-71.174850002, 42.350337], [-71.174798001, 42.35051], [-71.174752001, 42.350664], [-71.174706001, 42.350817], [-71.174642001, 42.351032], [-71.174626001, 42.351085], [-71.174572001, 42.351266], [-71.174463001, 42.351634], [-71.174438001, 42.351717], [-71.174404001, 42.35183], [-71.174376002, 42.351925], [-71.174304001, 42.352165], [-71.174260001, 42.352311], [-71.174132001, 42.35274], [-71.174029001, 42.353083], [-71.173997001, 42.353195], [-71.173935002, 42.353397], [-71.173916002, 42.353465], [-71.173533001, 42.353863], [-71.172887001, 42.354533], [-71.172773001, 42.354651], [-71.172693002, 42.354735], [-71.172580001, 42.354852], [-71.172310001, 42.355132], [-71.171548001, 42.355922], [-71.171387001, 42.356089], [-71.171170001, 42.356315], [-71.170996001, 42.356495], [-71.170656002, 42.356848], [-71.170397002, 42.357115], [-71.170064002, 42.357467], [-71.169900001, 42.357626], [-71.169894001, 42.357641], [-71.169474001, 42.358047]]], "type": "Polygon"}, "properties": {"elderly_count": 330, "median_income": 82125.0, "tract_id": "25025000502", "tract_name": "Census Tract 5.02; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_51781483637d39f54a1e1bf368078031.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_51781483637d39f54a1e1bf368078031.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_51781483637d39f54a1e1bf368078031.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_aaefa847151f8b22c9f22468ef1bc2f2 = L.marker(
+                [42.34701141111111, -71.1669143012889],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_8aad3ea78f0c81c05b5009b3b0601b16 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    273\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_aaefa847151f8b22c9f22468ef1bc2f2.setIcon(div_icon_8aad3ea78f0c81c05b5009b3b0601b16);
+            
+    
+        function geo_json_5a1202e4fe82ff38fb4d6095041812d5_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#feffbe", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_5a1202e4fe82ff38fb4d6095041812d5_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_5a1202e4fe82ff38fb4d6095041812d5 = L.geoJson(null, {
+                onEachFeature: geo_json_5a1202e4fe82ff38fb4d6095041812d5_onEachFeature,
+            
+                style: geo_json_5a1202e4fe82ff38fb4d6095041812d5_styler,
+            ...{
+}
+        });
+
+        function geo_json_5a1202e4fe82ff38fb4d6095041812d5_add (data) {
+            geo_json_5a1202e4fe82ff38fb4d6095041812d5
+                .addData(data);
+        }
+            geo_json_5a1202e4fe82ff38fb4d6095041812d5_add({"features": [{"geometry": {"coordinates": [[[-71.174798001, 42.350265], [-71.174577001, 42.350242], [-71.172869001, 42.350051], [-71.172828001, 42.350046], [-71.172440001, 42.350008], [-71.172229001, 42.349988], [-71.172175001, 42.349982], [-71.171910002, 42.34995], [-71.171729001, 42.349909], [-71.171562001, 42.349852], [-71.171104001, 42.3497], [-71.170557001, 42.349503], [-71.170303001, 42.349429], [-71.170108001, 42.34939], [-71.169927001, 42.349383], [-71.169702002, 42.349411], [-71.169371001, 42.349511], [-71.168982001, 42.349643], [-71.168846001, 42.349738], [-71.168642002, 42.349978], [-71.168347001, 42.350346], [-71.168111001, 42.350663], [-71.167884002, 42.350649], [-71.167755002, 42.350617], [-71.167605001, 42.350604], [-71.167394001, 42.350575], [-71.166644001, 42.3505], [-71.166126002, 42.350431], [-71.165549001, 42.350312], [-71.165392001, 42.350272], [-71.165129001, 42.350171], [-71.164860001, 42.350042], [-71.164733001, 42.349957], [-71.164501002, 42.349812], [-71.164268001, 42.349659], [-71.163744001, 42.349328], [-71.163385001, 42.349131], [-71.163333001, 42.349115], [-71.163093001, 42.349041], [-71.162762001, 42.349023], [-71.162425002, 42.348995], [-71.162138002, 42.348989], [-71.161622002, 42.348964], [-71.161304001, 42.348965], [-71.160437001, 42.348916], [-71.160841002, 42.348346], [-71.161311002, 42.347576], [-71.161460001, 42.347346], [-71.161680002, 42.347005], [-71.162016002, 42.346509], [-71.162118002, 42.346373], [-71.162249001, 42.346223], [-71.162461001, 42.345911], [-71.162726002, 42.345576], [-71.162892001, 42.34542], [-71.163148001, 42.345253], [-71.163359001, 42.345108], [-71.163488002, 42.344992], [-71.163616001, 42.344857], [-71.163798001, 42.344585], [-71.164033002, 42.344172], [-71.164207001, 42.343926], [-71.164426001, 42.343681], [-71.164826001, 42.343295], [-71.165325002, 42.342671], [-71.165840001, 42.341872], [-71.165999002, 42.341593], [-71.166052001, 42.34147], [-71.166099002, 42.341122], [-71.166108002, 42.340814], [-71.166123001, 42.340593], [-71.166133001, 42.340434], [-71.166126001, 42.340088], [-71.166553002, 42.340039], [-71.166567002, 42.340031], [-71.166699002, 42.340009], [-71.166687001, 42.340074], [-71.166683001, 42.340104], [-71.166989001, 42.340464], [-71.168124001, 42.341917], [-71.168323001, 42.342168], [-71.169421001, 42.343531], [-71.170003002, 42.344252], [-71.171898001, 42.346655], [-71.172320001, 42.347173], [-71.173171001, 42.348208], [-71.173418001, 42.348531], [-71.174265001, 42.349584], [-71.174708001, 42.350155], [-71.174798001, 42.350265]]], "type": "Polygon"}, "properties": {"elderly_count": 273, "median_income": 92560.0, "tract_id": "25025000503", "tract_name": "Census Tract 5.03; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_5a1202e4fe82ff38fb4d6095041812d5.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_5a1202e4fe82ff38fb4d6095041812d5.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_5a1202e4fe82ff38fb4d6095041812d5.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_238fed23c21b28c84d5f4ca41fba08d6 = L.marker(
+                [42.350018805970144, -71.1337086132388],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_ed47608c5cc853b1fc80d9e4ce43f3ab = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    265\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_238fed23c21b28c84d5f4ca41fba08d6.setIcon(div_icon_ed47608c5cc853b1fc80d9e4ce43f3ab);
+            
+    
+        function geo_json_c0a2b4857a53cc91c3073293ebb620c3_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#4eb15d", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_c0a2b4857a53cc91c3073293ebb620c3_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_c0a2b4857a53cc91c3073293ebb620c3 = L.geoJson(null, {
+                onEachFeature: geo_json_c0a2b4857a53cc91c3073293ebb620c3_onEachFeature,
+            
+                style: geo_json_c0a2b4857a53cc91c3073293ebb620c3_styler,
+            ...{
+}
+        });
+
+        function geo_json_c0a2b4857a53cc91c3073293ebb620c3_add (data) {
+            geo_json_c0a2b4857a53cc91c3073293ebb620c3
+                .addData(data);
+        }
+            geo_json_c0a2b4857a53cc91c3073293ebb620c3_add({"features": [{"geometry": {"coordinates": [[[-71.136379001, 42.350393], [-71.136148001, 42.350794], [-71.135888001, 42.351253], [-71.135741001, 42.351528], [-71.135709001, 42.351581], [-71.135644001, 42.351695], [-71.135547001, 42.351828], [-71.135113001, 42.352375], [-71.134524002, 42.353112], [-71.134463001, 42.35324], [-71.134560001, 42.353352], [-71.134447001, 42.353338], [-71.134002002, 42.353283], [-71.133638001, 42.353238], [-71.133178001, 42.353181], [-71.133115002, 42.353173], [-71.132106002, 42.353061], [-71.132081001, 42.35294], [-71.131927001, 42.352384], [-71.131813002, 42.352008], [-71.131601001, 42.351443], [-71.131447001, 42.351154], [-71.131071001, 42.350499], [-71.131035002, 42.350426], [-71.131021002, 42.350406], [-71.130984002, 42.350336], [-71.130937001, 42.350266], [-71.130868001, 42.350136], [-71.130670001, 42.34986], [-71.130371001, 42.349528], [-71.130072001, 42.349247], [-71.130033001, 42.349218], [-71.129897001, 42.349058], [-71.129746002, 42.34885], [-71.130137001, 42.34866], [-71.130527001, 42.348476], [-71.130755001, 42.348368], [-71.131074002, 42.348216], [-71.131275002, 42.348121], [-71.132007002, 42.347773], [-71.133381001, 42.347122], [-71.134254001, 42.346577], [-71.134549001, 42.346729], [-71.134674001, 42.34685], [-71.135555002, 42.347592], [-71.135961001, 42.347957], [-71.135757001, 42.347968], [-71.135574001, 42.348003], [-71.135375001, 42.348054], [-71.135042001, 42.348165], [-71.135126001, 42.34829], [-71.135172001, 42.348358], [-71.135212001, 42.348425], [-71.135238001, 42.34849], [-71.135511002, 42.348776], [-71.135724001, 42.34904], [-71.135803002, 42.349168], [-71.135843001, 42.349274], [-71.135853001, 42.349381], [-71.135853002, 42.349449], [-71.135825002, 42.349573], [-71.135765001, 42.349721], [-71.135727002, 42.349837], [-71.135694002, 42.349992], [-71.135903002, 42.350065], [-71.136176001, 42.350213], [-71.136379001, 42.350393]]], "type": "Polygon"}, "properties": {"elderly_count": 265, "median_income": 131206.0, "tract_id": "25025000301", "tract_name": "Census Tract 3.01; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_c0a2b4857a53cc91c3073293ebb620c3.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_c0a2b4857a53cc91c3073293ebb620c3.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_c0a2b4857a53cc91c3073293ebb620c3.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_d904608b1bdaa2ea2b36aa584916e3c5 = L.marker(
+                [42.34444050458716, -71.15857836831192],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_c3115257fff2cbd70c93bfb0248c996b = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    253\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_d904608b1bdaa2ea2b36aa584916e3c5.setIcon(div_icon_c3115257fff2cbd70c93bfb0248c996b);
+            
+    
+        function geo_json_d8a69c14ca5c84aef949af17b21a5879_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#fdc171", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_d8a69c14ca5c84aef949af17b21a5879_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_d8a69c14ca5c84aef949af17b21a5879 = L.geoJson(null, {
+                onEachFeature: geo_json_d8a69c14ca5c84aef949af17b21a5879_onEachFeature,
+            
+                style: geo_json_d8a69c14ca5c84aef949af17b21a5879_styler,
+            ...{
+}
+        });
+
+        function geo_json_d8a69c14ca5c84aef949af17b21a5879_add (data) {
+            geo_json_d8a69c14ca5c84aef949af17b21a5879
+                .addData(data);
+        }
+            geo_json_d8a69c14ca5c84aef949af17b21a5879_add({"features": [{"geometry": {"coordinates": [[[-71.160437001, 42.348916], [-71.159904002, 42.348892], [-71.159612002, 42.348891], [-71.159326001, 42.348902], [-71.159156001, 42.348915], [-71.158996001, 42.348929], [-71.158830002, 42.34895], [-71.158654002, 42.348977], [-71.158236002, 42.349032], [-71.158025001, 42.349049], [-71.157808001, 42.349065], [-71.157388001, 42.349091], [-71.157079001, 42.34909], [-71.156475002, 42.349105], [-71.155746002, 42.349114], [-71.155224001, 42.349125], [-71.154715001, 42.349129], [-71.154438001, 42.349138], [-71.154020002, 42.349137], [-71.153449001, 42.349146], [-71.153476001, 42.348861], [-71.153514002, 42.348777], [-71.153720002, 42.34846], [-71.153840001, 42.348275], [-71.153946001, 42.348083], [-71.153992001, 42.347932], [-71.154000001, 42.347787], [-71.153949001, 42.347547], [-71.153786001, 42.347256], [-71.153448002, 42.346782], [-71.153346001, 42.346639], [-71.153067001, 42.346154], [-71.152997002, 42.345996], [-71.152937001, 42.345828], [-71.152910002, 42.345645], [-71.152947001, 42.345409], [-71.153039001, 42.345158], [-71.153072001, 42.345106], [-71.153274001, 42.34465], [-71.153368001, 42.344504], [-71.153434002, 42.344316], [-71.153457001, 42.344144], [-71.153451001, 42.343953], [-71.153421001, 42.343814], [-71.153393002, 42.343484], [-71.153417002, 42.343289], [-71.153462002, 42.343183], [-71.153632001, 42.342929], [-71.153841001, 42.342586], [-71.154197002, 42.342065], [-71.154356001, 42.341845], [-71.154553001, 42.341557], [-71.154734001, 42.341206], [-71.154909001, 42.340967], [-71.155257001, 42.340432], [-71.155288001, 42.340337], [-71.155536001, 42.340262], [-71.155679001, 42.34024], [-71.156069001, 42.340158], [-71.156618002, 42.34002], [-71.157183002, 42.339872], [-71.157528001, 42.339782], [-71.157878001, 42.33973], [-71.158964001, 42.339953], [-71.159758002, 42.340058], [-71.160616001, 42.340129], [-71.161052001, 42.340144], [-71.161087001, 42.340145], [-71.161170001, 42.340148], [-71.161473002, 42.34016], [-71.161533001, 42.340162], [-71.161586001, 42.34016], [-71.161613002, 42.340161], [-71.162884001, 42.3402], [-71.163522001, 42.340216], [-71.164126002, 42.340223], [-71.164288001, 42.340225], [-71.164579001, 42.340218], [-71.164897001, 42.340211], [-71.165558002, 42.340162], [-71.166126001, 42.340088], [-71.166133001, 42.340434], [-71.166123001, 42.340593], [-71.166108002, 42.340814], [-71.166099002, 42.341122], [-71.166052001, 42.34147], [-71.165999002, 42.341593], [-71.165840001, 42.341872], [-71.165325002, 42.342671], [-71.164826001, 42.343295], [-71.164426001, 42.343681], [-71.164207001, 42.343926], [-71.164033002, 42.344172], [-71.163798001, 42.344585], [-71.163616001, 42.344857], [-71.163488002, 42.344992], [-71.163359001, 42.345108], [-71.163148001, 42.345253], [-71.162892001, 42.34542], [-71.162726002, 42.345576], [-71.162461001, 42.345911], [-71.162249001, 42.346223], [-71.162118002, 42.346373], [-71.162016002, 42.346509], [-71.161680002, 42.347005], [-71.161460001, 42.347346], [-71.161311002, 42.347576], [-71.160841002, 42.348346], [-71.160437001, 42.348916]]], "type": "Polygon"}, "properties": {"elderly_count": 253, "median_income": 73403.0, "tract_id": "25025000506", "tract_name": "Census Tract 5.06; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_d8a69c14ca5c84aef949af17b21a5879.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_d8a69c14ca5c84aef949af17b21a5879.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_d8a69c14ca5c84aef949af17b21a5879.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_4fbbfe462d3bd2e4c692f60923c6d737 = L.marker(
+                [42.3475874, -71.14488201667692],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_cc58ec1c80c84fefbe4fd6bc26da1302 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    251\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_4fbbfe462d3bd2e4c692f60923c6d737.setIcon(div_icon_cc58ec1c80c84fefbe4fd6bc26da1302);
+            
+    
+        function geo_json_a4504261d3addebbb2597f33d94060c0_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#fee491", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_a4504261d3addebbb2597f33d94060c0_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_a4504261d3addebbb2597f33d94060c0 = L.geoJson(null, {
+                onEachFeature: geo_json_a4504261d3addebbb2597f33d94060c0_onEachFeature,
+            
+                style: geo_json_a4504261d3addebbb2597f33d94060c0_styler,
+            ...{
+}
+        });
+
+        function geo_json_a4504261d3addebbb2597f33d94060c0_add (data) {
+            geo_json_a4504261d3addebbb2597f33d94060c0
+                .addData(data);
+        }
+            geo_json_a4504261d3addebbb2597f33d94060c0_add({"features": [{"geometry": {"coordinates": [[[-71.147079002, 42.350165], [-71.146442001, 42.350061], [-71.145586001, 42.34992], [-71.144295001, 42.349736], [-71.144053001, 42.349696], [-71.143512001, 42.349608], [-71.142179001, 42.349379], [-71.141841002, 42.349315], [-71.141654001, 42.349273], [-71.141413001, 42.349196], [-71.141013001, 42.349014], [-71.140366001, 42.348686], [-71.140462001, 42.348607], [-71.140570001, 42.348498], [-71.140667001, 42.348377], [-71.140749002, 42.348247], [-71.140809001, 42.348079], [-71.140870002, 42.347882], [-71.140911002, 42.347718], [-71.140934002, 42.347637], [-71.140979001, 42.347483], [-71.141083002, 42.347181], [-71.141168001, 42.346963], [-71.141300001, 42.346687], [-71.141522001, 42.346291], [-71.141698001, 42.34602], [-71.141727002, 42.345976], [-71.142085001, 42.345445], [-71.142306001, 42.345073], [-71.142438001, 42.344875], [-71.142699002, 42.344511], [-71.142791001, 42.344369], [-71.143109002, 42.343878], [-71.143728001, 42.34419], [-71.144543001, 42.344623], [-71.145049001, 42.344963], [-71.145335001, 42.345203], [-71.145560001, 42.345413], [-71.145661001, 42.345523], [-71.145862002, 42.345755], [-71.146096001, 42.345986], [-71.146238001, 42.346106], [-71.146351001, 42.346167], [-71.146514001, 42.346247], [-71.147316001, 42.346582], [-71.147741001, 42.346747], [-71.148043001, 42.346857], [-71.148344001, 42.347019], [-71.148651001, 42.347198], [-71.149047001, 42.347457], [-71.149368002, 42.347754], [-71.149755001, 42.348185], [-71.149958002, 42.348409], [-71.150271001, 42.348773], [-71.150364001, 42.34897], [-71.150154001, 42.348986], [-71.149943002, 42.349036], [-71.149525002, 42.349178], [-71.149341002, 42.34924], [-71.148984001, 42.349408], [-71.148620001, 42.349579], [-71.148160001, 42.349758], [-71.148027002, 42.349804], [-71.147393002, 42.350054], [-71.147079002, 42.350165]]], "type": "Polygon"}, "properties": {"elderly_count": 251, "median_income": 81853.0, "tract_id": "25025000804", "tract_name": "Census Tract 8.04; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_a4504261d3addebbb2597f33d94060c0.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_a4504261d3addebbb2597f33d94060c0.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_a4504261d3addebbb2597f33d94060c0.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_902824061e2b5f13e432b4ab081d03f4 = L.marker(
+                [42.35141337719298, -71.14737555397369],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_43ed494a0bcca55dcc8d3d6db0383dc9 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    244\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_902824061e2b5f13e432b4ab081d03f4.setIcon(div_icon_43ed494a0bcca55dcc8d3d6db0383dc9);
+            
+    
+        function geo_json_73a85653d7a81c5b3d76cc85905517ca_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#fff5ae", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_73a85653d7a81c5b3d76cc85905517ca_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_73a85653d7a81c5b3d76cc85905517ca = L.geoJson(null, {
+                onEachFeature: geo_json_73a85653d7a81c5b3d76cc85905517ca_onEachFeature,
+            
+                style: geo_json_73a85653d7a81c5b3d76cc85905517ca_styler,
+            ...{
+}
+        });
+
+        function geo_json_73a85653d7a81c5b3d76cc85905517ca_add (data) {
+            geo_json_73a85653d7a81c5b3d76cc85905517ca
+                .addData(data);
+        }
+            geo_json_73a85653d7a81c5b3d76cc85905517ca_add({"features": [{"geometry": {"coordinates": [[[-71.153449001, 42.349146], [-71.153421001, 42.349458], [-71.153330001, 42.349582], [-71.153070001, 42.349894], [-71.152964001, 42.350037], [-71.152816001, 42.350239], [-71.152384001, 42.350903], [-71.152096001, 42.351337], [-71.151915001, 42.35164], [-71.150949002, 42.351324], [-71.150274001, 42.351115], [-71.149071001, 42.350735], [-71.148023002, 42.350391], [-71.147862002, 42.350345], [-71.147364002, 42.351195], [-71.147279002, 42.351356], [-71.147141002, 42.351575], [-71.146743002, 42.352294], [-71.147261001, 42.352434], [-71.148100002, 42.352644], [-71.148639001, 42.352785], [-71.149284001, 42.352938], [-71.150394002, 42.353237], [-71.150881001, 42.35335], [-71.150707002, 42.353601], [-71.150533001, 42.353886], [-71.150358001, 42.354193], [-71.150087001, 42.354612], [-71.149965001, 42.3548], [-71.149809001, 42.355027], [-71.149535002, 42.355457], [-71.149082001, 42.356151], [-71.148407001, 42.355977], [-71.148391001, 42.355972], [-71.147993002, 42.355859], [-71.147536002, 42.355749], [-71.146587001, 42.355518], [-71.146316001, 42.355442], [-71.146116001, 42.355387], [-71.145898001, 42.355337], [-71.145621001, 42.355268], [-71.145161001, 42.355153], [-71.144176001, 42.354889], [-71.143802002, 42.354797], [-71.143349001, 42.354686], [-71.142579001, 42.354496], [-71.142370002, 42.354445], [-71.141663001, 42.354263], [-71.140681001, 42.354004], [-71.140520001, 42.353974], [-71.139931001, 42.353902], [-71.139621001, 42.353867], [-71.139066001, 42.353791], [-71.138085002, 42.353676], [-71.137625001, 42.353612], [-71.137445001, 42.353595], [-71.137341001, 42.35359], [-71.137492001, 42.353514], [-71.137742002, 42.353473], [-71.138353002, 42.35325], [-71.138997001, 42.352992], [-71.139277001, 42.352905], [-71.139576002, 42.352797], [-71.140266001, 42.352543], [-71.141020001, 42.35228], [-71.141603002, 42.352066], [-71.141925002, 42.351947], [-71.142151001, 42.351875], [-71.142428002, 42.351776], [-71.142789002, 42.351673], [-71.142997001, 42.351634], [-71.143151002, 42.351598], [-71.143981002, 42.351433], [-71.144155002, 42.351383], [-71.144291002, 42.351346], [-71.144549001, 42.351248], [-71.144962001, 42.351073], [-71.145612001, 42.350786], [-71.146511001, 42.350417], [-71.147079002, 42.350165], [-71.147393002, 42.350054], [-71.148027002, 42.349804], [-71.148160001, 42.349758], [-71.148620001, 42.349579], [-71.148984001, 42.349408], [-71.149341002, 42.34924], [-71.149525002, 42.349178], [-71.149943002, 42.349036], [-71.150154001, 42.348986], [-71.150364001, 42.34897], [-71.150271001, 42.348773], [-71.149958002, 42.348409], [-71.149755001, 42.348185], [-71.150073001, 42.347675], [-71.150692002, 42.34671], [-71.150898001, 42.346387], [-71.151010001, 42.346197], [-71.151235002, 42.345813], [-71.151646001, 42.345909], [-71.152446001, 42.346096], [-71.152812001, 42.346155], [-71.153067001, 42.346154], [-71.153346001, 42.346639], [-71.153448002, 42.346782], [-71.153786001, 42.347256], [-71.153949001, 42.347547], [-71.154000001, 42.347787], [-71.153992001, 42.347932], [-71.153946001, 42.348083], [-71.153840001, 42.348275], [-71.153720002, 42.34846], [-71.153514002, 42.348777], [-71.153476001, 42.348861], [-71.153449001, 42.349146]]], "type": "Polygon"}, "properties": {"elderly_count": 244, "median_income": 88625.0, "tract_id": "25025000202", "tract_name": "Census Tract 2.02; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_73a85653d7a81c5b3d76cc85905517ca.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_73a85653d7a81c5b3d76cc85905517ca.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_73a85653d7a81c5b3d76cc85905517ca.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_0d62ec47f72d4ad07005cb8459bc7ea7 = L.marker(
+                [42.3590240141844, -71.13082871053192],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_058651064dc0c41326107941b82b1b05 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    232\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_0d62ec47f72d4ad07005cb8459bc7ea7.setIcon(div_icon_058651064dc0c41326107941b82b1b05);
+            
+    
+        function geo_json_ce229818e6d76ec3b1932d2ba3a37374_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#d62f27", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_ce229818e6d76ec3b1932d2ba3a37374_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_ce229818e6d76ec3b1932d2ba3a37374 = L.geoJson(null, {
+                onEachFeature: geo_json_ce229818e6d76ec3b1932d2ba3a37374_onEachFeature,
+            
+                style: geo_json_ce229818e6d76ec3b1932d2ba3a37374_styler,
+            ...{
+}
+        });
+
+        function geo_json_ce229818e6d76ec3b1932d2ba3a37374_add (data) {
+            geo_json_ce229818e6d76ec3b1932d2ba3a37374
+                .addData(data);
+        }
+            geo_json_ce229818e6d76ec3b1932d2ba3a37374_add({"features": [{"geometry": {"coordinates": [[[-71.136961001, 42.359315], [-71.136439001, 42.359231], [-71.136162001, 42.359169], [-71.135892002, 42.359104], [-71.135157001, 42.35895], [-71.133700001, 42.358666], [-71.133303001, 42.358581], [-71.133083001, 42.358556], [-71.132476001, 42.35857], [-71.132240001, 42.358585], [-71.132170002, 42.358597], [-71.132036002, 42.358645], [-71.131836002, 42.358732], [-71.131621001, 42.358799], [-71.131488001, 42.358595], [-71.131267001, 42.358722], [-71.130992001, 42.358917], [-71.130830001, 42.359024], [-71.130545002, 42.359208], [-71.130356001, 42.359291], [-71.129780001, 42.359564], [-71.129517002, 42.359708], [-71.129263001, 42.359878], [-71.129063002, 42.360077], [-71.128966001, 42.360209], [-71.128879001, 42.360368], [-71.129287002, 42.360705], [-71.129412001, 42.360786], [-71.129768002, 42.361072], [-71.130101001, 42.361387], [-71.130277001, 42.361611], [-71.130362002, 42.361771], [-71.130417001, 42.361957], [-71.130411002, 42.362121], [-71.130361002, 42.362353], [-71.130301002, 42.362512], [-71.130218001, 42.362694], [-71.130090001, 42.362867], [-71.129949001, 42.36303], [-71.129755001, 42.363198], [-71.128767001, 42.363282], [-71.128017002, 42.363339], [-71.126562001, 42.363454], [-71.126154001, 42.363494], [-71.125448001, 42.363554], [-71.125022002, 42.363586], [-71.124741002, 42.363611], [-71.123320001, 42.363743], [-71.123039001, 42.363751], [-71.122987002, 42.363603], [-71.122961001, 42.363471], [-71.122961002, 42.363447], [-71.122930001, 42.363263], [-71.122882001, 42.363055], [-71.123005001, 42.363071], [-71.123150001, 42.363096], [-71.123405001, 42.363117], [-71.123609002, 42.363113], [-71.123845002, 42.363074], [-71.124066001, 42.363007], [-71.124227001, 42.362944], [-71.124410001, 42.362832], [-71.124556002, 42.362673], [-71.124627001, 42.362565], [-71.124675001, 42.362466], [-71.124752001, 42.362234], [-71.124834001, 42.361919], [-71.124900001, 42.361597], [-71.124929001, 42.36143], [-71.124914001, 42.361327], [-71.124829001, 42.361182], [-71.124578001, 42.360882], [-71.124466002, 42.36075], [-71.123825002, 42.359917], [-71.123708001, 42.35974], [-71.123457001, 42.359431], [-71.123361002, 42.359267], [-71.123245001, 42.359093], [-71.123180001, 42.358998], [-71.123322001, 42.358932], [-71.123756001, 42.358762], [-71.123861001, 42.358724], [-71.124867002, 42.358362], [-71.125783002, 42.358061], [-71.126417002, 42.357856], [-71.126531001, 42.35782], [-71.127064001, 42.357618], [-71.128027001, 42.357261], [-71.129517001, 42.356723], [-71.129718001, 42.356654], [-71.130233001, 42.356478], [-71.130738001, 42.35636], [-71.130802001, 42.356336], [-71.131276002, 42.356158], [-71.131396001, 42.356105], [-71.132216001, 42.355783], [-71.132404002, 42.355712], [-71.132766001, 42.355537], [-71.133275001, 42.355316], [-71.133591002, 42.35517], [-71.134013002, 42.354995], [-71.134395002, 42.354836], [-71.134496001, 42.354789], [-71.135079001, 42.354543], [-71.135719001, 42.354273], [-71.136024002, 42.354143], [-71.136283001, 42.354041], [-71.136679001, 42.353866], [-71.136747001, 42.353839], [-71.137075001, 42.353712], [-71.137341001, 42.35359], [-71.137445001, 42.353595], [-71.137625001, 42.353612], [-71.138085002, 42.353676], [-71.139066001, 42.353791], [-71.138823002, 42.354554], [-71.138625002, 42.355061], [-71.138608001, 42.355173], [-71.138608001, 42.355261], [-71.138623002, 42.355341], [-71.138633002, 42.355441], [-71.138595001, 42.355664], [-71.138496001, 42.356048], [-71.138421001, 42.356313], [-71.138362002, 42.356564], [-71.138350002, 42.356612], [-71.138325002, 42.356751], [-71.138309001, 42.356793], [-71.138198001, 42.357093], [-71.138189001, 42.357134], [-71.138140001, 42.357278], [-71.138080002, 42.357419], [-71.137979002, 42.357608], [-71.137836001, 42.35788], [-71.137586001, 42.358334], [-71.137466001, 42.358578], [-71.137369002, 42.358761], [-71.137287001, 42.358861], [-71.137174001, 42.358961], [-71.137098001, 42.359056], [-71.136961001, 42.359315]]], "type": "Polygon"}, "properties": {"elderly_count": 232, "median_income": 45000.0, "tract_id": "25025010103", "tract_name": "Census Tract 101.03; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_ce229818e6d76ec3b1932d2ba3a37374.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_ce229818e6d76ec3b1932d2ba3a37374.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_ce229818e6d76ec3b1932d2ba3a37374.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_01e9c76f6f6921edc40e671ca4d16094 = L.marker(
+                [42.35102451428571, -71.13974527272858],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_97e3458cda2d4440b010afd1b75267e7 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    204\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_01e9c76f6f6921edc40e671ca4d16094.setIcon(div_icon_97e3458cda2d4440b010afd1b75267e7);
+            
+    
+        function geo_json_285560d8cab3493b4825c5007f028ada_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#db382b", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_285560d8cab3493b4825c5007f028ada_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_285560d8cab3493b4825c5007f028ada = L.geoJson(null, {
+                onEachFeature: geo_json_285560d8cab3493b4825c5007f028ada_onEachFeature,
+            
+                style: geo_json_285560d8cab3493b4825c5007f028ada_styler,
+            ...{
+}
+        });
+
+        function geo_json_285560d8cab3493b4825c5007f028ada_add (data) {
+            geo_json_285560d8cab3493b4825c5007f028ada
+                .addData(data);
+        }
+            geo_json_285560d8cab3493b4825c5007f028ada_add({"features": [{"geometry": {"coordinates": [[[-71.137341001, 42.35359], [-71.136934001, 42.353572], [-71.136827001, 42.353567], [-71.136669002, 42.353556], [-71.135801001, 42.353497], [-71.135497001, 42.353465], [-71.135387001, 42.353454], [-71.134560001, 42.353352], [-71.134463001, 42.35324], [-71.134524002, 42.353112], [-71.135113001, 42.352375], [-71.135547001, 42.351828], [-71.135644001, 42.351695], [-71.135709001, 42.351581], [-71.135741001, 42.351528], [-71.135888001, 42.351253], [-71.136148001, 42.350794], [-71.136379001, 42.350393], [-71.136536002, 42.350194], [-71.136893002, 42.349704], [-71.137188002, 42.349264], [-71.137383001, 42.348982], [-71.137580001, 42.348649], [-71.138267001, 42.348885], [-71.138410001, 42.348926], [-71.138576001, 42.348975], [-71.138898002, 42.349034], [-71.139084002, 42.349048], [-71.139270001, 42.349044], [-71.139631001, 42.349003], [-71.139731002, 42.348977], [-71.139806001, 42.348958], [-71.139880001, 42.348933], [-71.140043001, 42.348866], [-71.140219001, 42.348774], [-71.140366001, 42.348686], [-71.141013001, 42.349014], [-71.141413001, 42.349196], [-71.141654001, 42.349273], [-71.141841002, 42.349315], [-71.142179001, 42.349379], [-71.143512001, 42.349608], [-71.144053001, 42.349696], [-71.144295001, 42.349736], [-71.145586001, 42.34992], [-71.146442001, 42.350061], [-71.147079002, 42.350165], [-71.146511001, 42.350417], [-71.145612001, 42.350786], [-71.144962001, 42.351073], [-71.144549001, 42.351248], [-71.144291002, 42.351346], [-71.144155002, 42.351383], [-71.143981002, 42.351433], [-71.143151002, 42.351598], [-71.142997001, 42.351634], [-71.142789002, 42.351673], [-71.142428002, 42.351776], [-71.142151001, 42.351875], [-71.141925002, 42.351947], [-71.141603002, 42.352066], [-71.141020001, 42.35228], [-71.140266001, 42.352543], [-71.139576002, 42.352797], [-71.139277001, 42.352905], [-71.138997001, 42.352992], [-71.138353002, 42.35325], [-71.137742002, 42.353473], [-71.137492001, 42.353514], [-71.137341001, 42.35359]]], "type": "Polygon"}, "properties": {"elderly_count": 204, "median_income": 46985.0, "tract_id": "25025000703", "tract_name": "Census Tract 7.03; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_285560d8cab3493b4825c5007f028ada.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_285560d8cab3493b4825c5007f028ada.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_285560d8cab3493b4825c5007f028ada.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_b54b746cf047edc75376be4e62d8adfc = L.marker(
+                [42.337246416666666, -71.15763768184723],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_644525c6841fdb4240699bcd34bd633e = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    188\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_b54b746cf047edc75376be4e62d8adfc.setIcon(div_icon_644525c6841fdb4240699bcd34bd633e);
+            
+    
+        function geo_json_82e40543b9a06d57ab7ca1c9a6edb5a0_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#addc6f", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_82e40543b9a06d57ab7ca1c9a6edb5a0_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_82e40543b9a06d57ab7ca1c9a6edb5a0 = L.geoJson(null, {
+                onEachFeature: geo_json_82e40543b9a06d57ab7ca1c9a6edb5a0_onEachFeature,
+            
+                style: geo_json_82e40543b9a06d57ab7ca1c9a6edb5a0_styler,
+            ...{
+}
+        });
+
+        function geo_json_82e40543b9a06d57ab7ca1c9a6edb5a0_add (data) {
+            geo_json_82e40543b9a06d57ab7ca1c9a6edb5a0
+                .addData(data);
+        }
+            geo_json_82e40543b9a06d57ab7ca1c9a6edb5a0_add({"features": [{"geometry": {"coordinates": [[[-71.166699002, 42.340009], [-71.166567002, 42.340031], [-71.166553002, 42.340039], [-71.166126001, 42.340088], [-71.165558002, 42.340162], [-71.164897001, 42.340211], [-71.164579001, 42.340218], [-71.164288001, 42.340225], [-71.164126002, 42.340223], [-71.163522001, 42.340216], [-71.162884001, 42.3402], [-71.161613002, 42.340161], [-71.161586001, 42.34016], [-71.161533001, 42.340162], [-71.161473002, 42.34016], [-71.161170001, 42.340148], [-71.161087001, 42.340145], [-71.161052001, 42.340144], [-71.160616001, 42.340129], [-71.159758002, 42.340058], [-71.158964001, 42.339953], [-71.157878001, 42.33973], [-71.157528001, 42.339782], [-71.157183002, 42.339872], [-71.156618002, 42.34002], [-71.156069001, 42.340158], [-71.155679001, 42.34024], [-71.155536001, 42.340262], [-71.155288001, 42.340337], [-71.155257001, 42.340432], [-71.154909001, 42.340967], [-71.154734001, 42.341206], [-71.154623001, 42.341233], [-71.154537001, 42.341225], [-71.154462001, 42.341198], [-71.154061001, 42.340979], [-71.153778001, 42.340855], [-71.153530002, 42.340793], [-71.153111001, 42.340696], [-71.152623001, 42.340628], [-71.152195001, 42.340621], [-71.151963001, 42.340598], [-71.151648002, 42.340535], [-71.151382001, 42.340423], [-71.151624002, 42.340209], [-71.151824002, 42.340025], [-71.151942001, 42.339903], [-71.152115002, 42.339693], [-71.152268002, 42.339473], [-71.152413001, 42.339254], [-71.152587001, 42.338896], [-71.152688002, 42.338715], [-71.152741001, 42.338646], [-71.152820001, 42.338542], [-71.152961001, 42.338417], [-71.153082001, 42.338333], [-71.153365002, 42.338185], [-71.153286001, 42.338117], [-71.153192001, 42.338037], [-71.152262001, 42.337185], [-71.151620001, 42.337304], [-71.150658001, 42.337495], [-71.149839002, 42.337665], [-71.150105001, 42.337193], [-71.150309001, 42.336842], [-71.150084001, 42.336842], [-71.149476001, 42.336929], [-71.149355001, 42.33699], [-71.149197001, 42.33709], [-71.148956002, 42.337196], [-71.148701001, 42.337267], [-71.147741001, 42.337455], [-71.147346002, 42.337512], [-71.147281001, 42.337262], [-71.147266002, 42.337201], [-71.148742001, 42.336866], [-71.148711002, 42.33679], [-71.148580001, 42.336487], [-71.148555002, 42.336423], [-71.148516001, 42.33633], [-71.148492002, 42.336274], [-71.148482002, 42.336253], [-71.148474001, 42.336231], [-71.148295002, 42.335807], [-71.148526001, 42.335752], [-71.149600001, 42.335501], [-71.149652002, 42.335488], [-71.150059001, 42.335393], [-71.150104002, 42.335282], [-71.150134001, 42.33521], [-71.150461002, 42.334968], [-71.149956001, 42.334691], [-71.149853002, 42.334635], [-71.154962001, 42.331616], [-71.156262001, 42.330847], [-71.157036002, 42.33039], [-71.157113001, 42.330466], [-71.157346001, 42.330714], [-71.157508001, 42.330886], [-71.157667001, 42.331059], [-71.158546002, 42.331984], [-71.158716002, 42.332162], [-71.158956002, 42.332424], [-71.159325001, 42.332768], [-71.159723001, 42.333036], [-71.160170001, 42.333272], [-71.160260001, 42.333319], [-71.160347002, 42.333365], [-71.160917002, 42.333639], [-71.161295001, 42.333783], [-71.161721001, 42.333886], [-71.162099001, 42.333944], [-71.162298001, 42.333965], [-71.162525001, 42.333966], [-71.162732001, 42.333961], [-71.162972001, 42.333947], [-71.163667001, 42.33387], [-71.164032001, 42.333829], [-71.164310001, 42.333798], [-71.164776001, 42.333747], [-71.165190001, 42.333691], [-71.165437001, 42.333672], [-71.166461001, 42.333561], [-71.166766002, 42.333528], [-71.167565001, 42.333441], [-71.168021002, 42.334426], [-71.168191002, 42.334791], [-71.168410001, 42.335022], [-71.168471001, 42.335085], [-71.168570001, 42.335143], [-71.168886001, 42.335826], [-71.168859001, 42.336304], [-71.169122001, 42.337376], [-71.169192001, 42.337883], [-71.169217001, 42.338068], [-71.169087001, 42.338245], [-71.168936002, 42.338449], [-71.168633001, 42.338629], [-71.168315001, 42.338742], [-71.167729001, 42.338955], [-71.167701001, 42.338965], [-71.166808001, 42.33929], [-71.166740001, 42.339854], [-71.166699002, 42.340009]]], "type": "Polygon"}, "properties": {"elderly_count": 188, "median_income": 114271.0, "tract_id": "25025000201", "tract_name": "Census Tract 2.01; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_82e40543b9a06d57ab7ca1c9a6edb5a0.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_82e40543b9a06d57ab7ca1c9a6edb5a0.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_82e40543b9a06d57ab7ca1c9a6edb5a0.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_349eb9c7b671689e11f7285b5dc2a6a1 = L.marker(
+                [42.34262348684211, -71.14188094864474],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_9be3d6f00a8285d9fb3eed25ae96f10d = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    166\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_349eb9c7b671689e11f7285b5dc2a6a1.setIcon(div_icon_9be3d6f00a8285d9fb3eed25ae96f10d);
+            
+    
+        function geo_json_98e7d775db4a99795e12a642915af828_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#f67f4b", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_98e7d775db4a99795e12a642915af828_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_98e7d775db4a99795e12a642915af828 = L.geoJson(null, {
+                onEachFeature: geo_json_98e7d775db4a99795e12a642915af828_onEachFeature,
+            
+                style: geo_json_98e7d775db4a99795e12a642915af828_styler,
+            ...{
+}
+        });
+
+        function geo_json_98e7d775db4a99795e12a642915af828_add (data) {
+            geo_json_98e7d775db4a99795e12a642915af828
+                .addData(data);
+        }
+            geo_json_98e7d775db4a99795e12a642915af828_add({"features": [{"geometry": {"coordinates": [[[-71.143109002, 42.343878], [-71.142791001, 42.344369], [-71.142699002, 42.344511], [-71.142438001, 42.344875], [-71.142306001, 42.345073], [-71.142085001, 42.345445], [-71.141727002, 42.345976], [-71.141698001, 42.34602], [-71.141451002, 42.345928], [-71.141358001, 42.345895], [-71.141238001, 42.345853], [-71.141198001, 42.345835], [-71.140750002, 42.34563], [-71.140519001, 42.345523], [-71.140166001, 42.345322], [-71.139804001, 42.345093], [-71.139548001, 42.344945], [-71.139045002, 42.344616], [-71.138387001, 42.344218], [-71.138246002, 42.344126], [-71.137824001, 42.343876], [-71.137966001, 42.343768], [-71.138497002, 42.343338], [-71.138653002, 42.343212], [-71.138750001, 42.343134], [-71.138809002, 42.343087], [-71.138902001, 42.343011], [-71.139977001, 42.34214], [-71.140070001, 42.342089], [-71.140710001, 42.341552], [-71.141095001, 42.341236], [-71.141298001, 42.34107], [-71.141326002, 42.341048], [-71.141353001, 42.34101], [-71.141449001, 42.340876], [-71.141619001, 42.340641], [-71.141754001, 42.340396], [-71.141896002, 42.340436], [-71.142048001, 42.340448], [-71.142203001, 42.340429], [-71.142434002, 42.340308], [-71.142964001, 42.340411], [-71.143133001, 42.34042], [-71.143321001, 42.340412], [-71.143729002, 42.34041], [-71.144013001, 42.340423], [-71.144239001, 42.340468], [-71.144453001, 42.340548], [-71.144619001, 42.340636], [-71.144692001, 42.340707], [-71.144757001, 42.340769], [-71.144843001, 42.340881], [-71.144474001, 42.341011], [-71.144249002, 42.34107], [-71.144012001, 42.34111], [-71.143725001, 42.341124], [-71.143422001, 42.341148], [-71.143266001, 42.341187], [-71.143099001, 42.341243], [-71.143067001, 42.341262], [-71.142938001, 42.341338], [-71.142700001, 42.341545], [-71.142559001, 42.341682], [-71.142503002, 42.34173], [-71.142368002, 42.341889], [-71.142313002, 42.341973], [-71.142114001, 42.342224], [-71.141518001, 42.342952], [-71.141918001, 42.343189], [-71.142112001, 42.343287], [-71.142313002, 42.343409], [-71.142675002, 42.343629], [-71.142744001, 42.343669], [-71.142835001, 42.343721], [-71.142960001, 42.343794], [-71.143109002, 42.343878]]], "type": "Polygon"}, "properties": {"elderly_count": 166, "median_income": 60060.0, "tract_id": "25025000604", "tract_name": "Census Tract 6.04; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_98e7d775db4a99795e12a642915af828.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_98e7d775db4a99795e12a642915af828.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_98e7d775db4a99795e12a642915af828.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_a63a2f7b6a51ae11be641c3062f64afa = L.marker(
+                [42.34768412658228, -71.13807633041772],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_32185897971324f49001433bad89584f = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    151\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_a63a2f7b6a51ae11be641c3062f64afa.setIcon(div_icon_32185897971324f49001433bad89584f);
+            
+    
+        function geo_json_8e83840056e52dd3244ca897c2a85f7f_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#feda86", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_8e83840056e52dd3244ca897c2a85f7f_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_8e83840056e52dd3244ca897c2a85f7f = L.geoJson(null, {
+                onEachFeature: geo_json_8e83840056e52dd3244ca897c2a85f7f_onEachFeature,
+            
+                style: geo_json_8e83840056e52dd3244ca897c2a85f7f_styler,
+            ...{
+}
+        });
+
+        function geo_json_8e83840056e52dd3244ca897c2a85f7f_add (data) {
+            geo_json_8e83840056e52dd3244ca897c2a85f7f
+                .addData(data);
+        }
+            geo_json_8e83840056e52dd3244ca897c2a85f7f_add({"features": [{"geometry": {"coordinates": [[[-71.140366001, 42.348686], [-71.140219001, 42.348774], [-71.140043001, 42.348866], [-71.139880001, 42.348933], [-71.139806001, 42.348958], [-71.139731002, 42.348977], [-71.139631001, 42.349003], [-71.139270001, 42.349044], [-71.139084002, 42.349048], [-71.138898002, 42.349034], [-71.138576001, 42.348975], [-71.138410001, 42.348926], [-71.138267001, 42.348885], [-71.137580001, 42.348649], [-71.137383001, 42.348982], [-71.137188002, 42.349264], [-71.136893002, 42.349704], [-71.136536002, 42.350194], [-71.136379001, 42.350393], [-71.136176001, 42.350213], [-71.135903002, 42.350065], [-71.135694002, 42.349992], [-71.135727002, 42.349837], [-71.135765001, 42.349721], [-71.135825002, 42.349573], [-71.135853002, 42.349449], [-71.135853001, 42.349381], [-71.135843001, 42.349274], [-71.135803002, 42.349168], [-71.135724001, 42.34904], [-71.135511002, 42.348776], [-71.135238001, 42.34849], [-71.135212001, 42.348425], [-71.135172001, 42.348358], [-71.135126001, 42.34829], [-71.135042001, 42.348165], [-71.135375001, 42.348054], [-71.135574001, 42.348003], [-71.135757001, 42.347968], [-71.135961001, 42.347957], [-71.135555002, 42.347592], [-71.134674001, 42.34685], [-71.134549001, 42.346729], [-71.134254001, 42.346577], [-71.135155001, 42.346023], [-71.135278001, 42.345941], [-71.135456001, 42.345795], [-71.135985001, 42.345366], [-71.136758002, 42.344745], [-71.137109001, 42.344461], [-71.137361001, 42.344257], [-71.137824001, 42.343876], [-71.138246002, 42.344126], [-71.138387001, 42.344218], [-71.139045002, 42.344616], [-71.139548001, 42.344945], [-71.139804001, 42.345093], [-71.140166001, 42.345322], [-71.140519001, 42.345523], [-71.140750002, 42.34563], [-71.141198001, 42.345835], [-71.141238001, 42.345853], [-71.141358001, 42.345895], [-71.141451002, 42.345928], [-71.141698001, 42.34602], [-71.141522001, 42.346291], [-71.141300001, 42.346687], [-71.141168001, 42.346963], [-71.141083002, 42.347181], [-71.140979001, 42.347483], [-71.140934002, 42.347637], [-71.140911002, 42.347718], [-71.140870002, 42.347882], [-71.140809001, 42.348079], [-71.140749002, 42.348247], [-71.140667001, 42.348377], [-71.140570001, 42.348498], [-71.140462001, 42.348607], [-71.140366001, 42.348686]]], "type": "Polygon"}, "properties": {"elderly_count": 151, "median_income": 79000.0, "tract_id": "25025000102", "tract_name": "Census Tract 1.02; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_8e83840056e52dd3244ca897c2a85f7f.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_8e83840056e52dd3244ca897c2a85f7f.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_8e83840056e52dd3244ca897c2a85f7f.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_af1569fe8f7e93813a4865c84138b97e = L.marker(
+                [42.358935740259746, -71.14699630648052],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_1e060325c1b8ea5fd1c11ccb56fcd026 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    134\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_af1569fe8f7e93813a4865c84138b97e.setIcon(div_icon_1e060325c1b8ea5fd1c11ccb56fcd026);
+            
+    
+        function geo_json_87d6d281e9b1497f11ac7f32f80383d4_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#a50026", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_87d6d281e9b1497f11ac7f32f80383d4_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_87d6d281e9b1497f11ac7f32f80383d4 = L.geoJson(null, {
+                onEachFeature: geo_json_87d6d281e9b1497f11ac7f32f80383d4_onEachFeature,
+            
+                style: geo_json_87d6d281e9b1497f11ac7f32f80383d4_styler,
+            ...{
+}
+        });
+
+        function geo_json_87d6d281e9b1497f11ac7f32f80383d4_add (data) {
+            geo_json_87d6d281e9b1497f11ac7f32f80383d4
+                .addData(data);
+        }
+            geo_json_87d6d281e9b1497f11ac7f32f80383d4_add({"features": [{"geometry": {"coordinates": [[[-71.160899002, 42.358625], [-71.160489001, 42.358809], [-71.160209001, 42.358899], [-71.160032001, 42.358965], [-71.159793001, 42.359033], [-71.159468001, 42.359083], [-71.159182002, 42.359082], [-71.158928001, 42.359047], [-71.158723001, 42.359003], [-71.158554001, 42.358953], [-71.158346001, 42.358835], [-71.158262001, 42.358771], [-71.157943002, 42.358864], [-71.157649002, 42.358919], [-71.157319002, 42.358958], [-71.155869001, 42.359076], [-71.154780001, 42.359162], [-71.154362001, 42.359239], [-71.153994001, 42.359316], [-71.153685001, 42.35941], [-71.153272001, 42.35956], [-71.152797001, 42.359771], [-71.152454001, 42.359913], [-71.152104002, 42.360024], [-71.151853001, 42.360082], [-71.151154002, 42.360191], [-71.150307001, 42.3603], [-71.149924001, 42.360344], [-71.149407001, 42.360387], [-71.148472001, 42.360526], [-71.147927001, 42.360645], [-71.147218001, 42.360891], [-71.146689001, 42.361205], [-71.146499001, 42.361361], [-71.146393001, 42.361468], [-71.146323001, 42.361542], [-71.146301001, 42.361559], [-71.146171002, 42.361657], [-71.146115002, 42.361708], [-71.145746001, 42.362064], [-71.145366001, 42.36242], [-71.144953002, 42.36272], [-71.144744001, 42.362825], [-71.144514001, 42.362933], [-71.144226001, 42.363024], [-71.143944002, 42.36309], [-71.143424002, 42.363177], [-71.141999002, 42.363354], [-71.141062001, 42.363475], [-71.140358001, 42.36357], [-71.139952001, 42.363632], [-71.139551001, 42.363698], [-71.138879001, 42.363839], [-71.137645001, 42.364125], [-71.137274001, 42.364233], [-71.136277002, 42.364554], [-71.135452001, 42.364849], [-71.135403001, 42.364741], [-71.135399001, 42.364561], [-71.135355002, 42.364102], [-71.135352002, 42.364057], [-71.135315002, 42.363503], [-71.135309001, 42.363299], [-71.135331001, 42.363175], [-71.135392002, 42.362963], [-71.135642001, 42.362421], [-71.135706001, 42.362256], [-71.135822001, 42.361959], [-71.136050001, 42.361434], [-71.136273001, 42.360903], [-71.136328001, 42.360796], [-71.136596002, 42.360161], [-71.136961001, 42.359315], [-71.137098001, 42.359056], [-71.137174001, 42.358961], [-71.137287001, 42.358861], [-71.137369002, 42.358761], [-71.137466001, 42.358578], [-71.137586001, 42.358334], [-71.137836001, 42.35788], [-71.137979002, 42.357608], [-71.138080002, 42.357419], [-71.138140001, 42.357278], [-71.138189001, 42.357134], [-71.138198001, 42.357093], [-71.138309001, 42.356793], [-71.138325002, 42.356751], [-71.138350002, 42.356612], [-71.138362002, 42.356564], [-71.138421001, 42.356313], [-71.138496001, 42.356048], [-71.138595001, 42.355664], [-71.138633002, 42.355441], [-71.138623002, 42.355341], [-71.138608001, 42.355261], [-71.138608001, 42.355173], [-71.138625002, 42.355061], [-71.138823002, 42.354554], [-71.139066001, 42.353791], [-71.139621001, 42.353867], [-71.139931001, 42.353902], [-71.140520001, 42.353974], [-71.140681001, 42.354004], [-71.141663001, 42.354263], [-71.142370002, 42.354445], [-71.142579001, 42.354496], [-71.143349001, 42.354686], [-71.143802002, 42.354797], [-71.144176001, 42.354889], [-71.145161001, 42.355153], [-71.145621001, 42.355268], [-71.145898001, 42.355337], [-71.146116001, 42.355387], [-71.146316001, 42.355442], [-71.146587001, 42.355518], [-71.147536002, 42.355749], [-71.147993002, 42.355859], [-71.148391001, 42.355972], [-71.148407001, 42.355977], [-71.149082001, 42.356151], [-71.149532001, 42.356259], [-71.150987002, 42.356639], [-71.151297001, 42.356723], [-71.152204001, 42.356954], [-71.152947001, 42.357152], [-71.153194001, 42.357226], [-71.153449002, 42.357327], [-71.153762001, 42.357525], [-71.153863001, 42.357588], [-71.153893001, 42.357613], [-71.153958002, 42.357665], [-71.154093001, 42.35776], [-71.154322001, 42.357903], [-71.154499001, 42.358004], [-71.154693001, 42.358139], [-71.154914002, 42.358147], [-71.155630001, 42.3582], [-71.155947001, 42.358218], [-71.156280002, 42.358228], [-71.156596001, 42.358232], [-71.157076002, 42.35823], [-71.157321001, 42.358251], [-71.157536001, 42.358286], [-71.158026001, 42.358422], [-71.158184001, 42.358456], [-71.158296002, 42.358478], [-71.158402002, 42.358499], [-71.158954001, 42.358592], [-71.159393001, 42.35859], [-71.160095002, 42.358575], [-71.160445001, 42.358566], [-71.160553002, 42.358573], [-71.160679001, 42.358582], [-71.160899002, 42.358625]]], "type": "Polygon"}, "properties": {"elderly_count": 134, "median_income": 33229.0, "tract_id": "25025000603", "tract_name": "Census Tract 6.03; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_87d6d281e9b1497f11ac7f32f80383d4.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_87d6d281e9b1497f11ac7f32f80383d4.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_87d6d281e9b1497f11ac7f32f80383d4.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_a99d5432cedb8035bc77b45deee0b5f8 = L.marker(
+                [42.3609485, -71.13244898466668],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_01afa601f77c090c1e7487c15b10d5f3 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    131\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_a99d5432cedb8035bc77b45deee0b5f8.setIcon(div_icon_01afa601f77c090c1e7487c15b10d5f3);
+            
+    
+        function geo_json_7c29e3c0530fec1100082b0403dc64cc_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#fff7b2", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_7c29e3c0530fec1100082b0403dc64cc_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_7c29e3c0530fec1100082b0403dc64cc = L.geoJson(null, {
+                onEachFeature: geo_json_7c29e3c0530fec1100082b0403dc64cc_onEachFeature,
+            
+                style: geo_json_7c29e3c0530fec1100082b0403dc64cc_styler,
+            ...{
+}
+        });
+
+        function geo_json_7c29e3c0530fec1100082b0403dc64cc_add (data) {
+            geo_json_7c29e3c0530fec1100082b0403dc64cc
+                .addData(data);
+        }
+            geo_json_7c29e3c0530fec1100082b0403dc64cc_add({"features": [{"geometry": {"coordinates": [[[-71.135331001, 42.363175], [-71.134558002, 42.363284], [-71.134285002, 42.363324], [-71.133810001, 42.363381], [-71.133585001, 42.363396], [-71.133336001, 42.363392], [-71.133088001, 42.363383], [-71.132645001, 42.363332], [-71.132209002, 42.363246], [-71.131789001, 42.363161], [-71.131521002, 42.363088], [-71.131416001, 42.363054], [-71.130922002, 42.362893], [-71.130367001, 42.362703], [-71.130218001, 42.362694], [-71.130301002, 42.362512], [-71.130361002, 42.362353], [-71.130411002, 42.362121], [-71.130417001, 42.361957], [-71.130362002, 42.361771], [-71.130277001, 42.361611], [-71.130101001, 42.361387], [-71.129768002, 42.361072], [-71.129412001, 42.360786], [-71.129287002, 42.360705], [-71.128879001, 42.360368], [-71.128966001, 42.360209], [-71.129063002, 42.360077], [-71.129263001, 42.359878], [-71.129517002, 42.359708], [-71.129780001, 42.359564], [-71.130356001, 42.359291], [-71.130545002, 42.359208], [-71.130830001, 42.359024], [-71.130992001, 42.358917], [-71.131267001, 42.358722], [-71.131488001, 42.358595], [-71.131621001, 42.358799], [-71.131836002, 42.358732], [-71.132036002, 42.358645], [-71.132170002, 42.358597], [-71.132240001, 42.358585], [-71.132476001, 42.35857], [-71.133083001, 42.358556], [-71.133303001, 42.358581], [-71.133700001, 42.358666], [-71.135157001, 42.35895], [-71.135892002, 42.359104], [-71.136162001, 42.359169], [-71.136439001, 42.359231], [-71.136961001, 42.359315], [-71.136596002, 42.360161], [-71.136328001, 42.360796], [-71.136273001, 42.360903], [-71.136050001, 42.361434], [-71.135822001, 42.361959], [-71.135706001, 42.362256], [-71.135642001, 42.362421], [-71.135392002, 42.362963], [-71.135331001, 42.363175]]], "type": "Polygon"}, "properties": {"elderly_count": 131, "median_income": 89479.0, "tract_id": "25025000806", "tract_name": "Census Tract 8.06; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_7c29e3c0530fec1100082b0403dc64cc.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_7c29e3c0530fec1100082b0403dc64cc.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_7c29e3c0530fec1100082b0403dc64cc.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_652ad657ed3db85b6c046de01d98c230 = L.marker(
+                [42.34020491379311, -71.14958336332758],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_15a057f2d17207b480d60ff7dd005450 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    118\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_652ad657ed3db85b6c046de01d98c230.setIcon(div_icon_15a057f2d17207b480d60ff7dd005450);
+            
+    
+        function geo_json_8035f2a2c586145f92f440a6e3beee79_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#006837", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_8035f2a2c586145f92f440a6e3beee79_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_8035f2a2c586145f92f440a6e3beee79 = L.geoJson(null, {
+                onEachFeature: geo_json_8035f2a2c586145f92f440a6e3beee79_onEachFeature,
+            
+                style: geo_json_8035f2a2c586145f92f440a6e3beee79_styler,
+            ...{
+}
+        });
+
+        function geo_json_8035f2a2c586145f92f440a6e3beee79_add (data) {
+            geo_json_8035f2a2c586145f92f440a6e3beee79
+                .addData(data);
+        }
+            geo_json_8035f2a2c586145f92f440a6e3beee79_add({"features": [{"geometry": {"coordinates": [[[-71.151382001, 42.340423], [-71.151308001, 42.340479], [-71.151150002, 42.340601], [-71.150922001, 42.340764], [-71.150487002, 42.341055], [-71.150403001, 42.341217], [-71.150265001, 42.341322], [-71.149972001, 42.341466], [-71.149656001, 42.341583], [-71.149295001, 42.341687], [-71.148840001, 42.341781], [-71.148633002, 42.341814], [-71.148071001, 42.341832], [-71.147627002, 42.341801], [-71.147306001, 42.341784], [-71.147007001, 42.341782], [-71.146742001, 42.341791], [-71.146460001, 42.341811], [-71.146115001, 42.34186], [-71.145923001, 42.341897], [-71.145870002, 42.341774], [-71.145829001, 42.341659], [-71.145802001, 42.34158], [-71.145779001, 42.341516], [-71.145961001, 42.34148], [-71.146311001, 42.341419], [-71.146860001, 42.341372], [-71.146891001, 42.34132], [-71.146982002, 42.341192], [-71.147333001, 42.340837], [-71.147571002, 42.340611], [-71.148080001, 42.34017], [-71.148378001, 42.339899], [-71.148696001, 42.339538], [-71.148847001, 42.339358], [-71.149286001, 42.338632], [-71.149468001, 42.338281], [-71.149658002, 42.33798], [-71.149839002, 42.337665], [-71.150658001, 42.337495], [-71.151620001, 42.337304], [-71.152262001, 42.337185], [-71.153192001, 42.338037], [-71.153286001, 42.338117], [-71.153365002, 42.338185], [-71.153082001, 42.338333], [-71.152961001, 42.338417], [-71.152820001, 42.338542], [-71.152741001, 42.338646], [-71.152688002, 42.338715], [-71.152587001, 42.338896], [-71.152413001, 42.339254], [-71.152268002, 42.339473], [-71.152115002, 42.339693], [-71.151942001, 42.339903], [-71.151824002, 42.340025], [-71.151624002, 42.340209], [-71.151382001, 42.340423]]], "type": "Polygon"}, "properties": {"elderly_count": 118, "median_income": 151466.0, "tract_id": "25025000101", "tract_name": "Census Tract 1.01; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_8035f2a2c586145f92f440a6e3beee79.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_8035f2a2c586145f92f440a6e3beee79.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_8035f2a2c586145f92f440a6e3beee79.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_2e00edb2a87d2a3ffd971976f1375d69 = L.marker(
+                [42.35375284285714, -71.12933608701428],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_f4a785c52e3270869a1b2aa5ef7c7f34 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    56\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_2e00edb2a87d2a3ffd971976f1375d69.setIcon(div_icon_f4a785c52e3270869a1b2aa5ef7c7f34);
+            
+    
+        function geo_json_1734c0e4ab1eb61fc37b45ad954d8f22_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#ec5c3b", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_1734c0e4ab1eb61fc37b45ad954d8f22_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_1734c0e4ab1eb61fc37b45ad954d8f22 = L.geoJson(null, {
+                onEachFeature: geo_json_1734c0e4ab1eb61fc37b45ad954d8f22_onEachFeature,
+            
+                style: geo_json_1734c0e4ab1eb61fc37b45ad954d8f22_styler,
+            ...{
+}
+        });
+
+        function geo_json_1734c0e4ab1eb61fc37b45ad954d8f22_add (data) {
+            geo_json_1734c0e4ab1eb61fc37b45ad954d8f22
+                .addData(data);
+        }
+            geo_json_1734c0e4ab1eb61fc37b45ad954d8f22_add({"features": [{"geometry": {"coordinates": [[[-71.131396001, 42.356105], [-71.131190001, 42.356095], [-71.130273001, 42.35596], [-71.129905001, 42.355921], [-71.128408001, 42.355705], [-71.127271001, 42.35555], [-71.126157001, 42.35539], [-71.125088001, 42.355236], [-71.124778001, 42.355192], [-71.124102002, 42.355096], [-71.122847001, 42.354918], [-71.121644001, 42.354746], [-71.120729001, 42.354615], [-71.120694001, 42.354479], [-71.120832002, 42.353824], [-71.120987002, 42.353101], [-71.121040002, 42.352892], [-71.121112001, 42.352529], [-71.121260001, 42.351872], [-71.121651001, 42.35192], [-71.122203001, 42.351988], [-71.122806001, 42.352062], [-71.123199001, 42.35211], [-71.123802001, 42.352195], [-71.124060002, 42.352223], [-71.124236001, 42.352242], [-71.124410002, 42.352232], [-71.124575001, 42.352223], [-71.124863002, 42.352228], [-71.125024002, 42.352236], [-71.125201001, 42.352245], [-71.125910002, 42.352324], [-71.126903001, 42.352434], [-71.126917002, 42.352435], [-71.127710001, 42.352529], [-71.128344001, 42.352604], [-71.129385002, 42.352732], [-71.129509002, 42.352747], [-71.130167001, 42.352828], [-71.131278001, 42.352949], [-71.132106002, 42.353061], [-71.133115002, 42.353173], [-71.133178001, 42.353181], [-71.133638001, 42.353238], [-71.134002002, 42.353283], [-71.134447001, 42.353338], [-71.134560001, 42.353352], [-71.135387001, 42.353454], [-71.135497001, 42.353465], [-71.135801001, 42.353497], [-71.136669002, 42.353556], [-71.136827001, 42.353567], [-71.136934001, 42.353572], [-71.137341001, 42.35359], [-71.137075001, 42.353712], [-71.136747001, 42.353839], [-71.136679001, 42.353866], [-71.136283001, 42.354041], [-71.136024002, 42.354143], [-71.135719001, 42.354273], [-71.135079001, 42.354543], [-71.134496001, 42.354789], [-71.134395002, 42.354836], [-71.134013002, 42.354995], [-71.133591002, 42.35517], [-71.133275001, 42.355316], [-71.132766001, 42.355537], [-71.132404002, 42.355712], [-71.132216001, 42.355783], [-71.131396001, 42.356105]]], "type": "Polygon"}, "properties": {"elderly_count": 56, "median_income": 53824.0, "tract_id": "25025000805", "tract_name": "Census Tract 8.05; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_1734c0e4ab1eb61fc37b45ad954d8f22.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_1734c0e4ab1eb61fc37b45ad954d8f22.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_1734c0e4ab1eb61fc37b45ad954d8f22.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_4c9c1fe5bf0f3c327548db8f06ecf6d3 = L.marker(
+                [42.35127456, -71.12672176129334],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_1668863c1000edc383d404b4806c5d62 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    43\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_4c9c1fe5bf0f3c327548db8f06ecf6d3.setIcon(div_icon_1668863c1000edc383d404b4806c5d62);
+            
+    
+        function geo_json_78f3f8a0212f0c1b35ea3b58fe1abe7e_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#a2d76a", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_78f3f8a0212f0c1b35ea3b58fe1abe7e_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_78f3f8a0212f0c1b35ea3b58fe1abe7e = L.geoJson(null, {
+                onEachFeature: geo_json_78f3f8a0212f0c1b35ea3b58fe1abe7e_onEachFeature,
+            
+                style: geo_json_78f3f8a0212f0c1b35ea3b58fe1abe7e_styler,
+            ...{
+}
+        });
+
+        function geo_json_78f3f8a0212f0c1b35ea3b58fe1abe7e_add (data) {
+            geo_json_78f3f8a0212f0c1b35ea3b58fe1abe7e
+                .addData(data);
+        }
+            geo_json_78f3f8a0212f0c1b35ea3b58fe1abe7e_add({"features": [{"geometry": {"coordinates": [[[-71.132106002, 42.353061], [-71.131278001, 42.352949], [-71.130167001, 42.352828], [-71.129509002, 42.352747], [-71.129385002, 42.352732], [-71.128344001, 42.352604], [-71.127710001, 42.352529], [-71.126917002, 42.352435], [-71.126903001, 42.352434], [-71.125910002, 42.352324], [-71.125201001, 42.352245], [-71.125024002, 42.352236], [-71.124863002, 42.352228], [-71.124575001, 42.352223], [-71.124410002, 42.352232], [-71.124236001, 42.352242], [-71.124060002, 42.352223], [-71.123802001, 42.352195], [-71.123199001, 42.35211], [-71.122806001, 42.352062], [-71.122203001, 42.351988], [-71.121651001, 42.35192], [-71.121260001, 42.351872], [-71.121284001, 42.351778], [-71.121311001, 42.351675], [-71.121530002, 42.351702], [-71.122183001, 42.351781], [-71.122229002, 42.351787], [-71.122243001, 42.351789], [-71.122275001, 42.351793], [-71.122400001, 42.351808], [-71.122426001, 42.35181], [-71.122855001, 42.351861], [-71.122942002, 42.351416], [-71.123518002, 42.351486], [-71.123988001, 42.351542], [-71.124067001, 42.351552], [-71.124129001, 42.351526], [-71.124453001, 42.35139], [-71.124556002, 42.351336], [-71.124635001, 42.351294], [-71.124697001, 42.35126], [-71.124755001, 42.35123], [-71.125527001, 42.350789], [-71.125889001, 42.350577], [-71.126215001, 42.350412], [-71.126854001, 42.350088], [-71.127484001, 42.350004], [-71.127506002, 42.349994], [-71.127674001, 42.349968], [-71.127935001, 42.349931], [-71.128583001, 42.349833], [-71.128580001, 42.349696], [-71.128780001, 42.349559], [-71.129004001, 42.349375], [-71.129145001, 42.349244], [-71.129281002, 42.349067], [-71.129746002, 42.34885], [-71.129897001, 42.349058], [-71.130033001, 42.349218], [-71.130072001, 42.349247], [-71.130371001, 42.349528], [-71.130670001, 42.34986], [-71.130868001, 42.350136], [-71.130937001, 42.350266], [-71.130984002, 42.350336], [-71.131021002, 42.350406], [-71.131035002, 42.350426], [-71.131071001, 42.350499], [-71.131447001, 42.351154], [-71.131601001, 42.351443], [-71.131813002, 42.352008], [-71.131927001, 42.352384], [-71.132081001, 42.35294], [-71.132106002, 42.353061]]], "type": "Polygon"}, "properties": {"elderly_count": 43, "median_income": 116793.0, "tract_id": "25025000302", "tract_name": "Census Tract 3.02; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_78f3f8a0212f0c1b35ea3b58fe1abe7e.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_78f3f8a0212f0c1b35ea3b58fe1abe7e.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_78f3f8a0212f0c1b35ea3b58fe1abe7e.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var marker_1e042ba27fad4258c1bc658c80f3fe18 = L.marker(
+                [42.363537566666665, -71.1256151393619],
+                {
+}
+            ).addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+            var div_icon_cdf0cbf59a46e92b569bc7e79f2a56d4 = L.divIcon({
+  "html": "\n                \u003cdiv style=\"\n                    background-color: white;\n                    border: 2px solid #333;\n                    border-radius: 5px;\n                    padding: 3px 6px;\n                    font-size: 11px;\n                    font-weight: bold;\n                    text-align: center;\n                    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);\n                \"\u003e\n                    9\n                \u003c/div\u003e\n                ",
+  "iconSize": [60, 25],
+  "iconAnchor": [30, 12],
+  "className": "empty",
+});
+        
+    
+                marker_1e042ba27fad4258c1bc658c80f3fe18.setIcon(div_icon_cdf0cbf59a46e92b569bc7e79f2a56d4);
+            
+    
+        function geo_json_69ad93665a61a4c11694f5392ce51edb_styler(feature) {
+            switch(feature.properties.tract_id) {
+                default:
+                    return {"color": "#333", "fillColor": "#eef8a8", "fillOpacity": 0.7, "weight": 2};
+            }
+        }
+
+        function geo_json_69ad93665a61a4c11694f5392ce51edb_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_69ad93665a61a4c11694f5392ce51edb = L.geoJson(null, {
+                onEachFeature: geo_json_69ad93665a61a4c11694f5392ce51edb_onEachFeature,
+            
+                style: geo_json_69ad93665a61a4c11694f5392ce51edb_styler,
+            ...{
+}
+        });
+
+        function geo_json_69ad93665a61a4c11694f5392ce51edb_add (data) {
+            geo_json_69ad93665a61a4c11694f5392ce51edb
+                .addData(data);
+        }
+            geo_json_69ad93665a61a4c11694f5392ce51edb_add({"features": [{"geometry": {"coordinates": [[[-71.135452001, 42.364849], [-71.135231001, 42.364928], [-71.134818001, 42.365089], [-71.134172002, 42.365387], [-71.133969001, 42.36548], [-71.133528001, 42.36571], [-71.133160001, 42.365914], [-71.132803002, 42.366127], [-71.132520001, 42.36632], [-71.132163001, 42.366593], [-71.131800001, 42.366915], [-71.131539001, 42.367191], [-71.131340001, 42.367419], [-71.131147001, 42.367668], [-71.130966002, 42.367953], [-71.130800001, 42.368234], [-71.130648001, 42.368535], [-71.130577001, 42.368725], [-71.130530001, 42.368851], [-71.130413001, 42.369248], [-71.130366001, 42.369508], [-71.130328001, 42.369799], [-71.130325001, 42.37003], [-71.130299001, 42.370733], [-71.130301001, 42.371131], [-71.130292001, 42.371979], [-71.130273001, 42.372114], [-71.130260001, 42.37221], [-71.130190002, 42.372418], [-71.130066002, 42.372601], [-71.129953001, 42.372684], [-71.129551002, 42.372713], [-71.129340002, 42.372729], [-71.128810002, 42.372738], [-71.128547001, 42.372734], [-71.128285001, 42.372702], [-71.128089002, 42.372654], [-71.127902001, 42.372597], [-71.127749001, 42.372519], [-71.127558001, 42.372381], [-71.127349001, 42.372191], [-71.127215001, 42.372014], [-71.127178001, 42.371938], [-71.127120002, 42.371818], [-71.127088001, 42.371701], [-71.127043001, 42.371536], [-71.126820001, 42.370267], [-71.126773001, 42.370071], [-71.126663002, 42.369833], [-71.126553001, 42.369681], [-71.126429001, 42.369538], [-71.126265001, 42.36938], [-71.126058002, 42.369227], [-71.125864002, 42.369099], [-71.125575001, 42.368969], [-71.125308002, 42.368858], [-71.124924001, 42.368732], [-71.124420001, 42.368543], [-71.123735001, 42.36832], [-71.123598001, 42.368275], [-71.122993001, 42.368051], [-71.122656001, 42.36796], [-71.122349001, 42.367882], [-71.121961001, 42.36781], [-71.121751001, 42.367788], [-71.121228002, 42.367751], [-71.120688001, 42.367723], [-71.120234001, 42.367728], [-71.120014001, 42.367707], [-71.119789001, 42.367674], [-71.119526002, 42.367622], [-71.119209001, 42.367537], [-71.119065001, 42.367476], [-71.118851002, 42.367363], [-71.118584001, 42.367159], [-71.118349001, 42.366914], [-71.118195001, 42.366683], [-71.118110002, 42.366466], [-71.118058001, 42.366231], [-71.118048001, 42.366023], [-71.118082001, 42.365708], [-71.118046002, 42.365194], [-71.118039002, 42.364571], [-71.118044002, 42.364181], [-71.118045001, 42.364058], [-71.118027001, 42.363439], [-71.118012002, 42.363259], [-71.117676001, 42.361071], [-71.117655001, 42.360994], [-71.117648001, 42.360915], [-71.117630001, 42.360727], [-71.117516001, 42.360034], [-71.117501001, 42.359866], [-71.117502001, 42.359723], [-71.117534001, 42.359408], [-71.117573001, 42.359213], [-71.117700002, 42.358834], [-71.118111001, 42.357644], [-71.118307002, 42.357098], [-71.118356001, 42.356926], [-71.118379001, 42.356786], [-71.118401001, 42.356695], [-71.118419001, 42.356539], [-71.118420001, 42.356348], [-71.118411001, 42.356108], [-71.118401002, 42.356004], [-71.118360001, 42.355777], [-71.118292002, 42.355506], [-71.118213002, 42.355266], [-71.118126002, 42.355092], [-71.118243001, 42.355067], [-71.118303001, 42.355054], [-71.118341001, 42.355046], [-71.118499002, 42.355013], [-71.118561001, 42.354999], [-71.119094002, 42.354885], [-71.119491002, 42.35475], [-71.120022002, 42.354717], [-71.120729001, 42.354615], [-71.121644001, 42.354746], [-71.122847001, 42.354918], [-71.124102002, 42.355096], [-71.124778001, 42.355192], [-71.125088001, 42.355236], [-71.126157001, 42.35539], [-71.127271001, 42.35555], [-71.128408001, 42.355705], [-71.129905001, 42.355921], [-71.130273001, 42.35596], [-71.131190001, 42.356095], [-71.131396001, 42.356105], [-71.131276002, 42.356158], [-71.130802001, 42.356336], [-71.130738001, 42.35636], [-71.130233001, 42.356478], [-71.129718001, 42.356654], [-71.129517001, 42.356723], [-71.128027001, 42.357261], [-71.127064001, 42.357618], [-71.126531001, 42.35782], [-71.126417002, 42.357856], [-71.125783002, 42.358061], [-71.124867002, 42.358362], [-71.123861001, 42.358724], [-71.123756001, 42.358762], [-71.123322001, 42.358932], [-71.123180001, 42.358998], [-71.123245001, 42.359093], [-71.123361002, 42.359267], [-71.123457001, 42.359431], [-71.123708001, 42.35974], [-71.123825002, 42.359917], [-71.124466002, 42.36075], [-71.124578001, 42.360882], [-71.124829001, 42.361182], [-71.124914001, 42.361327], [-71.124929001, 42.36143], [-71.124900001, 42.361597], [-71.124834001, 42.361919], [-71.124752001, 42.362234], [-71.124675001, 42.362466], [-71.124627001, 42.362565], [-71.124556002, 42.362673], [-71.124410001, 42.362832], [-71.124227001, 42.362944], [-71.124066001, 42.363007], [-71.123845002, 42.363074], [-71.123609002, 42.363113], [-71.123405001, 42.363117], [-71.123150001, 42.363096], [-71.123005001, 42.363071], [-71.122882001, 42.363055], [-71.122930001, 42.363263], [-71.122961002, 42.363447], [-71.122961001, 42.363471], [-71.122987002, 42.363603], [-71.123039001, 42.363751], [-71.123320001, 42.363743], [-71.124741002, 42.363611], [-71.125022002, 42.363586], [-71.125448001, 42.363554], [-71.126154001, 42.363494], [-71.126562001, 42.363454], [-71.128017002, 42.363339], [-71.128767001, 42.363282], [-71.129755001, 42.363198], [-71.129949001, 42.36303], [-71.130090001, 42.362867], [-71.130218001, 42.362694], [-71.130367001, 42.362703], [-71.130922002, 42.362893], [-71.131416001, 42.363054], [-71.131521002, 42.363088], [-71.131789001, 42.363161], [-71.132209002, 42.363246], [-71.132645001, 42.363332], [-71.133088001, 42.363383], [-71.133336001, 42.363392], [-71.133585001, 42.363396], [-71.133810001, 42.363381], [-71.134285002, 42.363324], [-71.134558002, 42.363284], [-71.135331001, 42.363175], [-71.135309001, 42.363299], [-71.135315002, 42.363503], [-71.135352002, 42.364057], [-71.135355002, 42.364102], [-71.135399001, 42.364561], [-71.135403001, 42.364741], [-71.135452001, 42.364849]]], "type": "Polygon"}, "properties": {"elderly_count": 9, "median_income": 97877.0, "tract_id": "25025000601", "tract_name": "Census Tract 6.01; Suffolk County; Massachusetts"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_69ad93665a61a4c11694f5392ce51edb.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count", "median_income"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:", "Median Income ($):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+    geo_json_69ad93665a61a4c11694f5392ce51edb.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["tract_id", "tract_name", "elderly_count"];
+    let aliases = ["Tract ID:", "Tract Name:", "Elderly Count:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "className": "foliumpopup",
+});
+                     
+    
+            geo_json_69ad93665a61a4c11694f5392ce51edb.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+        
+    
+    var color_map_1de2c8a8d5b4efa10d6bc0a65b87d215 = {};
+
+    
+    color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.color = d3.scale.threshold()
+              .domain([33229.0, 33465.947895791585, 33702.89579158316, 33939.84368737475, 34176.791583166334, 34413.73947895792, 34650.6873747495, 34887.63527054108, 35124.58316633267, 35361.531062124246, 35598.47895791583, 35835.42685370742, 36072.374749498995, 36309.32264529058, 36546.270541082165, 36783.21843687375, 37020.16633266533, 37257.114228456914, 37494.0621242485, 37731.01002004008, 37967.95791583166, 38204.90581162325, 38441.85370741483, 38678.80160320641, 38915.749498998, 39152.69739478958, 39389.64529058116, 39626.593186372746, 39863.54108216433, 40100.48897795591, 40337.436873747494, 40574.38476953908, 40811.33266533066, 41048.28056112224, 41285.22845691383, 41522.17635270541, 41759.12424849699, 41996.07214428858, 42233.02004008016, 42469.96793587174, 42706.915831663326, 42943.86372745491, 43180.811623246496, 43417.759519038074, 43654.70741482966, 43891.655310621245, 44128.60320641282, 44365.55110220441, 44602.498997995994, 44839.44689378758, 45076.39478957916, 45313.34268537074, 45550.29058116232, 45787.238476953906, 46024.18637274549, 46261.13426853708, 46498.08216432866, 46735.03006012024, 46971.977955911825, 47208.9258517034, 47445.87374749499, 47682.821643286574, 47919.76953907816, 48156.71743486974, 48393.66533066132, 48630.61322645291, 48867.561122244486, 49104.50901803607, 49341.45691382766, 49578.40480961924, 49815.35270541082, 50052.300601202405, 50289.24849699398, 50526.19639278557, 50763.144288577154, 51000.09218436874, 51237.040080160325, 51473.9879759519, 51710.93587174349, 51947.883767535066, 52184.83166332665, 52421.77955911824, 52658.72745490982, 52895.67535070141, 53132.623246492985, 53369.57114228457, 53606.51903807615, 53843.466933867734, 54080.41482965932, 54317.362725450905, 54554.31062124249, 54791.25851703407, 55028.206412825646, 55265.15430861723, 55502.10220440882, 55739.0501002004, 55975.99799599199, 56212.945891783565, 56449.89378757515, 56686.84168336673, 56923.789579158314, 57160.7374749499, 57397.685370741485, 57634.63326653307, 57871.58116232465, 58108.52905811623, 58345.47695390781, 58582.4248496994, 58819.37274549098, 59056.32064128257, 59293.26853707415, 59530.21643286573, 59767.164328657316, 60004.112224448894, 60241.06012024048, 60478.008016032065, 60714.95591182365, 60951.903807615236, 61188.85170340681, 61425.79959919839, 61662.74749498998, 61899.69539078156, 62136.64328657315, 62373.59118236473, 62610.53907815631, 62847.486973947896, 63084.434869739474, 63321.38276553106, 63558.330661322645, 63795.27855711423, 64032.226452905816, 64269.174348697394, 64506.12224448898, 64743.07014028056, 64980.01803607214, 65216.96593186373, 65453.91382765531, 65690.8617234469, 65927.80961923848, 66164.75751503007, 66401.70541082164, 66638.65330661323, 66875.60120240481, 67112.5490981964, 67349.49699398797, 67586.44488977955, 67823.39278557114, 68060.34068136272, 68297.28857715431, 68534.2364729459, 68771.18436873748, 69008.13226452906, 69245.08016032065, 69482.02805611223, 69718.9759519038, 69955.92384769539, 70192.87174348698, 70429.81963927855, 70666.76753507013, 70903.71543086172, 71140.6633266533, 71377.61122244489, 71614.55911823647, 71851.50701402806, 72088.45490981964, 72325.40280561123, 72562.35070140281, 72799.29859719439, 73036.24649298597, 73273.19438877756, 73510.14228456914, 73747.09018036071, 73984.0380761523, 74220.98597194388, 74457.93386773547, 74694.88176352705, 74931.82965931864, 75168.77755511022, 75405.72545090181, 75642.6733466934, 75879.62124248498, 76116.56913827655, 76353.51703406814, 76590.46492985972, 76827.41282565129, 77064.36072144288, 77301.30861723446, 77538.25651302605, 77775.20440881763, 78012.15230460922, 78249.1002004008, 78486.04809619239, 78722.99599198397, 78959.94388777556, 79196.89178356713, 79433.83967935872, 79670.7875751503, 79907.73547094189, 80144.68336673346, 80381.63126252504, 80618.57915831663, 80855.52705410821, 81092.4749498998, 81329.42284569138, 81566.37074148297, 81803.31863727455, 82040.26653306614, 82277.21442885773, 82514.1623246493, 82751.11022044088, 82988.05811623247, 83225.00601202404, 83461.95390781562, 83698.90180360721, 83935.8496993988, 84172.79759519038, 84409.74549098196, 84646.69338677355, 84883.64128256514, 85120.58917835672, 85357.5370741483, 85594.48496993988, 85831.43286573146, 86068.38076152305, 86305.32865731463, 86542.2765531062, 86779.22444889779, 87016.17234468937, 87253.12024048096, 87490.06813627254, 87727.01603206413, 87963.96392785572, 88200.9118236473, 88437.85971943889, 88674.80761523047, 88911.75551102204, 89148.70340681363, 89385.65130260521, 89622.59919839678, 89859.54709418837, 90096.49498997995, 90333.44288577154, 90570.39078156312, 90807.33867735471, 91044.2865731463, 91281.23446893788, 91518.18236472947, 91755.13026052105, 91992.07815631262, 92229.02605210421, 92465.97394789579, 92702.92184368738, 92939.86973947895, 93176.81763527053, 93413.76553106212, 93650.7134268537, 93887.66132264529, 94124.60921843688, 94361.55711422846, 94598.50501002005, 94835.45290581163, 95072.40080160322, 95309.34869739479, 95546.29659318637, 95783.24448897796, 96020.19238476953, 96257.14028056111, 96494.0881763527, 96731.03607214428, 96967.98396793587, 97204.93186372746, 97441.87975951904, 97678.82765531063, 97915.77555110221, 98152.7234468938, 98389.67134268537, 98626.61923847695, 98863.56713426854, 99100.51503006012, 99337.46292585171, 99574.41082164328, 99811.35871743486, 100048.30661322645, 100285.25450901804, 100522.20240480962, 100759.1503006012, 100996.09819639279, 101233.04609218436, 101469.99398797595, 101706.94188376753, 101943.88977955912, 102180.8376753507, 102417.78557114229, 102654.73346693387, 102891.68136272545, 103128.62925851703, 103365.57715430862, 103602.5250501002, 103839.47294589179, 104076.42084168337, 104313.36873747496, 104550.31663326653, 104787.26452905811, 105024.2124248497, 105261.16032064128, 105498.10821643287, 105735.05611222445, 105972.00400801603, 106208.95190380761, 106445.8997995992, 106682.84769539078, 106919.79559118237, 107156.74348697395, 107393.69138276554, 107630.63927855711, 107867.5871743487, 108104.53507014028, 108341.48296593186, 108578.43086172345, 108815.37875751503, 109052.32665330662, 109289.27454909819, 109526.22244488978, 109763.17034068136, 110000.11823647295, 110237.06613226453, 110474.01402805612, 110710.9619238477, 110947.90981963927, 111184.85771543086, 111421.80561122244, 111658.75350701403, 111895.70140280561, 112132.6492985972, 112369.59719438877, 112606.54509018036, 112843.49298597194, 113080.44088176353, 113317.38877755511, 113554.3366733467, 113791.28456913828, 114028.23246492985, 114265.18036072144, 114502.12825651302, 114739.07615230461, 114976.0240480962, 115212.97194388778, 115449.91983967937, 115686.86773547094, 115923.81563126252, 116160.7635270541, 116397.71142284569, 116634.65931863728, 116871.60721442886, 117108.55511022045, 117345.50300601202, 117582.4509018036, 117819.39879759519, 118056.34669338677, 118293.29458917836, 118530.24248496995, 118767.19038076152, 119004.1382765531, 119241.08617234469, 119478.03406813627, 119714.98196392786, 119951.92985971944, 120188.87775551103, 120425.8256513026, 120662.77354709418, 120899.72144288577, 121136.66933867735, 121373.61723446894, 121610.56513026053, 121847.51302605211, 122084.46092184368, 122321.40881763527, 122558.35671342685, 122795.30460921844, 123032.25250501002, 123269.20040080161, 123506.14829659318, 123743.09619238476, 123980.04408817635, 124216.99198396794, 124453.93987975952, 124690.8877755511, 124927.83567134269, 125164.78356713426, 125401.73146292585, 125638.67935871743, 125875.62725450902, 126112.5751503006, 126349.52304609219, 126586.47094188377, 126823.41883767534, 127060.36673346693, 127297.31462925852, 127534.2625250501, 127771.21042084169, 128008.15831663327, 128245.10621242486, 128482.05410821643, 128719.00200400801, 128955.9498997996, 129192.89779559118, 129429.84569138277, 129666.79358717435, 129903.74148296592, 130140.68937875751, 130377.6372745491, 130614.58517034068, 130851.53306613227, 131088.48096192384, 131325.42885771545, 131562.376753507, 131799.3246492986, 132036.27254509018, 132273.22044088176, 132510.16833667335, 132747.11623246493, 132984.06412825652, 133221.01202404808, 133457.9599198397, 133694.90781563125, 133931.85571142286, 134168.80360721442, 134405.75150300603, 134642.6993987976, 134879.64729458917, 135116.59519038076, 135353.54308617234, 135590.49098196393, 135827.4388777555, 136064.3867735471, 136301.33466933866, 136538.28256513027, 136775.23046092183, 137012.17835671344, 137249.126252505, 137486.0741482966, 137723.02204408817, 137959.96993987975, 138196.91783567134, 138433.86573146292, 138670.8136272545, 138907.7615230461, 139144.70941883768, 139381.65731462926, 139618.60521042085, 139855.5531062124, 140092.50100200402, 140329.44889779558, 140566.3967935872, 140803.34468937875, 141040.29258517036, 141277.24048096192, 141514.1883767535, 141751.1362725451, 141988.08416833667, 142225.03206412826, 142461.97995991984, 142698.92785571143, 142935.875751503, 143172.8236472946, 143409.77154308616, 143646.71943887777, 143883.66733466933, 144120.61523046094, 144357.5631262525, 144594.51102204408, 144831.45891783567, 145068.40681362725, 145305.35470941884, 145542.30260521043, 145779.250501002, 146016.19839679357, 146253.14629258518, 146490.09418837674, 146727.04208416835, 146963.9899799599, 147200.93787575152, 147437.88577154308, 147674.83366733466, 147911.78156312625, 148148.72945891783, 148385.67735470942, 148622.625250501, 148859.5731462926, 149096.52104208415, 149333.46893787576, 149570.41683366732, 149807.36472945893, 150044.3126252505, 150281.2605210421, 150518.20841683366, 150755.15631262524, 150992.10420841683, 151229.05210420841, 151466.0])
+              .range(['#a50026ff', '#a60126ff', '#a70226ff', '#a80326ff', '#aa0426ff', '#ab0526ff', '#ac0626ff', '#ad0726ff', '#ae0826ff', '#af0926ff', '#b00a26ff', '#b10b26ff', '#b20c26ff', '#b40d26ff', '#b50e26ff', '#b60f26ff', '#b71026ff', '#b81226ff', '#b91326ff', '#ba1426ff', '#bb1526ff', '#bc1626ff', '#bd1726ff', '#bf1826ff', '#c01926ff', '#c11a26ff', '#c21b26ff', '#c31c26ff', '#c41d26ff', '#c51e26ff', '#c61f26ff', '#c72026ff', '#c92126ff', '#ca2326ff', '#cb2426ff', '#cc2526ff', '#cd2626ff', '#ce2726ff', '#cf2826ff', '#d02927ff', '#d12a27ff', '#d32b27ff', '#d42c27ff', '#d52d27ff', '#d62e27ff', '#d72f27ff', '#d83127ff', '#d83228ff', '#d93328ff', '#da3529ff', '#da362aff', '#db372aff', '#dc392bff', '#dc3a2bff', '#dd3b2cff', '#de3d2dff', '#de3e2dff', '#df3f2eff', '#df412eff', '#e0422fff', '#e14330ff', '#e14530ff', '#e24631ff', '#e34732ff', '#e34932ff', '#e44a33ff', '#e54c33ff', '#e54d34ff', '#e64e35ff', '#e75035ff', '#e75136ff', '#e85237ff', '#e85437ff', '#e95538ff', '#ea5638ff', '#ea5839ff', '#eb593aff', '#ec5a3aff', '#ec5c3bff', '#ed5d3bff', '#ee5e3cff', '#ee603dff', '#ef613dff', '#ef623eff', '#f0643fff', '#f1653fff', '#f16740ff', '#f26840ff', '#f36941ff', '#f36b42ff', '#f46c42ff', '#f56d43ff', '#f56f44ff', '#f57044ff', '#f57245ff', '#f57346ff', '#f67546ff', '#f67647ff', '#f67748ff', '#f67948ff', '#f67a49ff', '#f77c4aff', '#f77d4aff', '#f77f4bff', '#f7804cff', '#f7814cff', '#f7834dff', '#f8844eff', '#f8864eff', '#f8874fff', '#f88950ff', '#f88a50ff', '#f98c51ff', '#f98d52ff', '#f98e52ff', '#f99053ff', '#f99154ff', '#fa9354ff', '#fa9455ff', '#fa9656ff', '#fa9756ff', '#fa9857ff', '#fb9a58ff', '#fb9b58ff', '#fb9d59ff', '#fb9e5aff', '#fba05aff', '#fca15bff', '#fca35cff', '#fca45cff', '#fca55dff', '#fca75eff', '#fda85eff', '#fdaa5fff', '#fdab5fff', '#fdad60ff', '#fdae61ff', '#feaf62ff', '#feb063ff', '#feb164ff', '#feb365ff', '#feb465ff', '#feb566ff', '#feb667ff', '#feb768ff', '#feb869ff', '#feb96aff', '#feba6bff', '#febb6cff', '#febc6dff', '#febe6eff', '#febf6fff', '#fec070ff', '#fec171ff', '#fec272ff', '#fec372ff', '#fec473ff', '#fec574ff', '#fec675ff', '#fec876ff', '#fec977ff', '#feca78ff', '#fecb79ff', '#fecc7aff', '#fecd7bff', '#fece7cff', '#fecf7dff', '#fed07eff', '#fed17fff', '#fed37fff', '#fed480ff', '#fed581ff', '#fed682ff', '#fed783ff', '#fed884ff', '#fed985ff', '#feda86ff', '#fedb87ff', '#fedd88ff', '#fede89ff', '#fedf8aff', '#fee08bff', '#fee18cff', '#fee18dff', '#fee28eff', '#fee38fff', '#fee390ff', '#fee491ff', '#fde492ff', '#fde593ff', '#fde694ff', '#fde695ff', '#fde796ff', '#fde897ff', '#fde898ff', '#fce999ff', '#fce99aff', '#fcea9bff', '#fceb9cff', '#fceb9dff', '#fcec9eff', '#fbec9fff', '#fbeda0ff', '#fbeea1ff', '#fbeea2ff', '#fbefa3ff', '#fbf0a4ff', '#fbf0a5ff', '#faf1a6ff', '#faf1a7ff', '#faf2a8ff', '#faf3a9ff', '#faf3aaff', '#faf4abff', '#f9f5acff', '#f9f5adff', '#f9f6aeff', '#f9f6afff', '#f9f7b0ff', '#f9f8b1ff', '#f9f8b2ff', '#f8f9b3ff', '#f8fab4ff', '#f8fab5ff', '#f8fbb6ff', '#f8fbb7ff', '#f8fcb8ff', '#f7fcb9ff', '#f7fcb9ff', '#f6fcb8ff', '#f5fcb8ff', '#f5fbb7ff', '#f4fbb7ff', '#f3fbb6ff', '#f3fbb6ff', '#f2fab5ff', '#f1fab5ff', '#f1fab4ff', '#f0fab4ff', '#eff9b3ff', '#eff9b3ff', '#eef9b2ff', '#edf8b2ff', '#edf8b1ff', '#ecf8b1ff', '#ebf8b0ff', '#ebf7b0ff', '#eaf7afff', '#e9f7afff', '#e9f7aeff', '#e8f6aeff', '#e7f6adff', '#e7f6adff', '#e6f6acff', '#e5f5acff', '#e5f5acff', '#e4f5abff', '#e3f4abff', '#e3f4aaff', '#e2f4aaff', '#e1f4a9ff', '#e1f3a9ff', '#e0f3a8ff', '#dff3a8ff', '#dff3a7ff', '#def2a7ff', '#ddf2a6ff', '#ddf2a6ff', '#dcf2a5ff', '#dbf1a5ff', '#dbf1a4ff', '#daf1a4ff', '#d9f0a3ff', '#d9f0a3ff', '#d8f0a2ff', '#d7efa2ff', '#d6efa1ff', '#d5eea1ff', '#d4eea0ff', '#d3eea0ff', '#d2eda0ff', '#d1ed9fff', '#d0ec9fff', '#cfec9eff', '#ceeb9eff', '#cdeb9dff', '#cceb9dff', '#cbea9cff', '#caea9cff', '#c9e99bff', '#c8e99bff', '#c7e99aff', '#c6e89aff', '#c5e899ff', '#c4e799ff', '#c3e799ff', '#c2e698ff', '#c1e698ff', '#c0e697ff', '#bfe597ff', '#bee596ff', '#bde496ff', '#bce495ff', '#bbe395ff', '#bae394ff', '#b9e394ff', '#b8e293ff', '#b7e293ff', '#b6e192ff', '#b5e192ff', '#b5e192ff', '#b4e091ff', '#b3e091ff', '#b2df90ff', '#b1df90ff', '#b0de8fff', '#afde8fff', '#aede8eff', '#addd8eff', '#abdd8dff', '#aadc8dff', '#a9dc8cff', '#a8db8cff', '#a7db8cff', '#a6da8bff', '#a4da8bff', '#a3d98aff', '#a2d98aff', '#a1d889ff', '#a0d889ff', '#9fd788ff', '#9dd788ff', '#9cd687ff', '#9bd687ff', '#9ad586ff', '#99d486ff', '#98d485ff', '#96d385ff', '#95d385ff', '#94d284ff', '#93d284ff', '#92d183ff', '#90d183ff', '#8fd082ff', '#8ed082ff', '#8dcf81ff', '#8ccf81ff', '#8bce80ff', '#89ce80ff', '#88cd7fff', '#87cd7fff', '#86cc7fff', '#85cc7eff', '#84cb7eff', '#82cb7dff', '#81ca7dff', '#80ca7cff', '#7fc97cff', '#7ec97bff', '#7dc87bff', '#7bc87aff', '#7ac77aff', '#79c779ff', '#78c679ff', '#77c678ff', '#75c578ff', '#74c477ff', '#73c476ff', '#72c376ff', '#71c375ff', '#6fc275ff', '#6ec174ff', '#6dc173ff', '#6cc073ff', '#6ac072ff', '#69bf71ff', '#68be71ff', '#67be70ff', '#66bd70ff', '#64bd6fff', '#63bc6eff', '#62bb6eff', '#61bb6dff', '#60ba6dff', '#5eba6cff', '#5db96bff', '#5cb86bff', '#5bb86aff', '#59b769ff', '#58b769ff', '#57b668ff', '#56b568ff', '#55b567ff', '#53b466ff', '#52b466ff', '#51b365ff', '#50b364ff', '#4eb264ff', '#4db163ff', '#4cb163ff', '#4bb062ff', '#4ab061ff', '#48af61ff', '#47ae60ff', '#46ae60ff', '#45ad5fff', '#44ad5eff', '#42ac5eff', '#41ab5dff', '#40ab5cff', '#40aa5cff', '#3fa95bff', '#3ea85bff', '#3ea75aff', '#3da65aff', '#3ca559ff', '#3ca558ff', '#3ba458ff', '#3aa357ff', '#3aa257ff', '#39a156ff', '#38a056ff', '#389f55ff', '#379e54ff', '#369e54ff', '#369d53ff', '#359c53ff', '#349b52ff', '#349a52ff', '#339951ff', '#329850ff', '#329850ff', '#31974fff', '#30964fff', '#30954eff', '#2f944dff', '#2e934dff', '#2e924cff', '#2d924cff', '#2c914bff', '#2c904bff', '#2b8f4aff', '#2a8e49ff', '#2a8d49ff', '#298c48ff', '#288b48ff', '#288b47ff', '#278a47ff', '#268946ff', '#268845ff', '#258745ff', '#248644ff', '#248544ff', '#238543ff', '#228443ff', '#228342ff', '#218342ff', '#208242ff', '#1f8142ff', '#1e8141ff', '#1e8041ff', '#1d7f41ff', '#1c7f41ff', '#1b7e40ff', '#1b7e40ff', '#1a7d40ff', '#197c3fff', '#187c3fff', '#187b3fff', '#177a3fff', '#167a3eff', '#15793eff', '#14793eff', '#14783eff', '#13773dff', '#12773dff', '#11763dff', '#11763dff', '#10753cff', '#0f743cff', '#0e743cff', '#0d733bff', '#0d723bff', '#0c723bff', '#0b713bff', '#0a713aff', '#0a703aff', '#096f3aff', '#086f3aff', '#076e39ff', '#066d39ff', '#066d39ff', '#056c39ff', '#046c38ff', '#036b38ff', '#036a38ff', '#026a38ff', '#016937ff', '#006937ff', '#006837ff']);
+    
+
+    color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.x = d3.scale.linear()
+              .domain([33229.0, 151466.0])
+              .range([0, 450 - 50]);
+
+    color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.legend = L.control({position: 'topright'});
+    color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.legend.addTo(map_fa0a4b5ff4addfaa2ed32cd919f1cdc3);
+
+    color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.xAxis = d3.svg.axis()
+        .scale(color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([33229.0, '', 54726.63636363637, '', 76224.27272727274, '', 97721.90909090909, '', 119219.54545454546, '', 140717.18181818182, '']);
+
+    color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.g = color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.g.selectAll("rect")
+        .data(color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.x(color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.color.domain()[i - 1]) : color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.x.range()[0],
+            x1: i < color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.color.domain().length ? color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.x(color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.color.domain()[i]) : color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.g.call(color_map_1de2c8a8d5b4efa10d6bc0a65b87d215.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Median Income per Census Tract ($) - Red=Low, Green=High");
+</script>
+</html>
