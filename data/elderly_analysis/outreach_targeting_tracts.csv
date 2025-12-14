@@ -1,0 +1,6 @@
+tract_id,tract_name,median_income,candidate_count,avg_score,tenure_breakdown
+25025000703.0,Census Tract 7.03; Suffolk County; Massachusetts,46985.0,33,41.06,"{'Unknown': 27, 'Homeowner': 5, 'Renter': 1}"
+25025010103.0,Census Tract 101.03; Suffolk County; Massachusetts,45000.0,14,45.36,"{'Homeowner': 10, 'Renter': 4}"
+25025000603.0,Census Tract 6.03; Suffolk County; Massachusetts,33229.0,10,44.5,"{'Homeowner': 9, 'Unknown': 1}"
+25025000506.0,Census Tract 5.06; Suffolk County; Massachusetts,73403.0,2,40.0,"{'Homeowner': 1, 'Renter': 1}"
+25025000805.0,Census Tract 8.05; Suffolk County; Massachusetts,53824.0,1,45.0,{'Homeowner': 1}

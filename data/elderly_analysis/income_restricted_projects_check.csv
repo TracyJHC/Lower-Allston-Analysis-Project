@@ -1,0 +1,24 @@
+project,target_address,match_type,matched_address,struct_id,elderly_count,source
+"Commonwealth (2-82,-95,-96,-97)",Fidelis Way,exact,2.0 FIDELIS WAY,229441_899445,43,buildings
+"Commonwealth (2-82,-95,-96,-97)",Fidelis Way Development,not_found,,,0,voters_direct
+Leventhal House (JCHE),30 Wallingford Road,closest,30.0 Wallingford RD,ASSESS_2102565015,155,buildings
+Reservoir Towers,275 Chestnut Hill Avenue,closest,25.0 CHESTNUT HILL AVE,228489_899802_AVE,0,buildings
+Ulin House,30 Wallingford Road,closest,30.0 Wallingford RD,ASSESS_2102565015,155,buildings
+Covenant House 202,30 Wallingford Road,closest,30.0 Wallingford RD,ASSESS_2102565015,155,buildings
+Patricia White Apartments,95 Washington Street,closest,35.0 Washington ST,229531_899262,0,buildings
+Wallingford Housing,30 Wallingford Road,closest,30.0 Wallingford RD,ASSESS_2102565015,155,buildings
+Heritage at Cleveland Circle,130 Chestnut Hill Avenue,closest,130.0 CHESTNUT HILL AVE,228611_899221_AVE,79,buildings
+Governor Apartments,25 Orkney Road,closest,32.0 ORKNEY RD,228911_898546,0,buildings
+Governor Apartments,27 Orkney Road,closest,27.0 ORKNEY RD,228923_898602,0,buildings
+Governor Apartments,29 Orkney Road,closest,32.0 ORKNEY RD,228911_898546,0,buildings
+Governor Apartments,31 Orkney Road,closest,31.0 ORKNEY RD,228904_898591,0,buildings
+Governor Apartments,33 Orkney Road,closest,32.0 ORKNEY RD,228911_898546,0,buildings
+Washington Street (2-35),2 Washington Street,closest,20.0 Washington ST,BHA_PATRICIA_WHITE,173,buildings
+Washington Street (2-35),35 Washington Street,closest,35.0 Washington ST,229531_899262,0,buildings
+Brighton–Allston Elderly,30 Wallingford Road,closest,30.0 Wallingford RD,ASSESS_2102565015,155,buildings
+J.J. Carroll Apartments,130 Chestnut Hill Avenue,closest,130.0 CHESTNUT HILL AVE,228611_899221_AVE,79,buildings
+Brighton–Allston Apartments (Allston),1387 Commonwealth Avenue,closest,1387.0 COMMONWEALTH AVE,229859_899890_AVE,8,buildings
+Brighton–Allston Apartments (Allston),439 Washington Street,closest,439.0 Washington ST,228228_899922,0,buildings
+Brighton–Allston Apartments (Allston),501 Washington Street,closest,35.0 Washington ST,229531_899262,0,buildings
+Jewish Community Housing for the Elderly (JCHE),30 Wallingford Road,closest,30.0 Wallingford RD,ASSESS_2102565015,155,buildings
+Brighton Gardens,1010 Commonwealth Avenue,closest,2101.0 COMMONWEALTH AVE,227802_898973_AVE,0,buildings
