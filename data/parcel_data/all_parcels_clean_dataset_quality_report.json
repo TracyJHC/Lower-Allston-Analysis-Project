@@ -1,0 +1,317 @@
+{
+  "total_records": 6878,
+  "completeness_by_column": {
+    "parcel_id": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "parcel_id_display": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "address": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "owner_name": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "owner_mailing_address": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "owner_count": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "int64"
+    },
+    "primary_owner": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "property_type": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "classification_code": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "is_residential": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "bool"
+    },
+    "is_commercial": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "bool"
+    },
+    "is_exempt": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "bool"
+    },
+    "year_built": {
+      "non_null_count": 6787,
+      "completeness_pct": 98.68,
+      "data_type": "float64"
+    },
+    "property_age": {
+      "non_null_count": 6787,
+      "completeness_pct": 98.68,
+      "data_type": "float64"
+    },
+    "lot_size_sqft": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "float64"
+    },
+    "living_area_sqft": {
+      "non_null_count": 6171,
+      "completeness_pct": 89.72,
+      "data_type": "float64"
+    },
+    "value_per_sqft": {
+      "non_null_count": 5628,
+      "completeness_pct": 81.83,
+      "data_type": "float64"
+    },
+    "lot_efficiency": {
+      "non_null_count": 6148,
+      "completeness_pct": 89.39,
+      "data_type": "float64"
+    },
+    "land_use": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "building_style": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "total_rooms_numeric": {
+      "non_null_count": 4831,
+      "completeness_pct": 70.24,
+      "data_type": "float64"
+    },
+    "bedrooms_numeric": {
+      "non_null_count": 4831,
+      "completeness_pct": 70.24,
+      "data_type": "float64"
+    },
+    "bathrooms_numeric": {
+      "non_null_count": 4831,
+      "completeness_pct": 70.24,
+      "data_type": "float64"
+    },
+    "half_bathrooms_numeric": {
+      "non_null_count": 4831,
+      "completeness_pct": 70.24,
+      "data_type": "float64"
+    },
+    "kitchens_numeric": {
+      "non_null_count": 4831,
+      "completeness_pct": 70.24,
+      "data_type": "float64"
+    },
+    "kitchen_type": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "fireplaces_numeric": {
+      "non_null_count": 4831,
+      "completeness_pct": 70.24,
+      "data_type": "float64"
+    },
+    "parking_spots_numeric": {
+      "non_null_count": 4831,
+      "completeness_pct": 70.24,
+      "data_type": "float64"
+    },
+    "story_height_numeric": {
+      "non_null_count": 4831,
+      "completeness_pct": 70.24,
+      "data_type": "float64"
+    },
+    "ac_type": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "heat_type": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "interior_condition": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "interior_finish": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "view": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "grade": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "roof_cover": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "roof_structure": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "exterior_finish": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "exterior_condition": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "foundation": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "outbuilding_type": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "outbuilding_size_numeric": {
+      "non_null_count": 2347,
+      "completeness_pct": 34.12,
+      "data_type": "float64"
+    },
+    "outbuilding_quality": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "outbuilding_condition": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    },
+    "fy2025_building_value_numeric": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "float64"
+    },
+    "fy2025_land_value_numeric": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "float64"
+    },
+    "fy2025_total_assessed_value_numeric": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "float64"
+    },
+    "residential_tax_rate_numeric": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "float64"
+    },
+    "commercial_tax_rate_numeric": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "float64"
+    },
+    "estimated_tax_numeric": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "float64"
+    },
+    "community_preservation_numeric": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "float64"
+    },
+    "total_first_half_tax_numeric": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "float64"
+    },
+    "residential_exemption_bool": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "bool"
+    },
+    "personal_exemption_bool": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "bool"
+    },
+    "latest_assessed_value": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "float64"
+    },
+    "value_trend_5yr": {
+      "non_null_count": 6421,
+      "completeness_pct": 93.36,
+      "data_type": "float64"
+    },
+    "value_trend_10yr": {
+      "non_null_count": 6444,
+      "completeness_pct": 93.69,
+      "data_type": "float64"
+    },
+    "value_volatility": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "float64"
+    },
+    "years_of_data": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "int64"
+    },
+    "scrape_timestamp": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "datetime64[ns]"
+    },
+    "assessment_date": {
+      "non_null_count": 0,
+      "completeness_pct": 0.0,
+      "data_type": "datetime64[ns]"
+    },
+    "exemption_notes": {
+      "non_null_count": 6878,
+      "completeness_pct": 100.0,
+      "data_type": "object"
+    }
+  },
+  "data_types": {},
+  "missing_data_summary": {}
+}
